@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-php" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/05/24/php/" class="article-date">
+  <time class="dt-published" datetime="2022-05-24T12:00:26.708Z" itemprop="datePublished">2022-05-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/05/24/php/">PHP</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h1><h2 id="在安装php遇到的坑"><a href="#在安装php遇到的坑" class="headerlink" title="在安装php遇到的坑"></a>在安装php遇到的坑</h2><p>1.如果命令提示符对sc或net没有反应，可以尝试在用户变量添</p>
+<p><code>%SystemRoot%\system32</code></p>
+<p>2.记得修改这两行代码</p>
+<p><code>Define SRVROOT &quot;F:\php_environment\Apache24&quot; ServerRoot &quot;$&#123;SRVROOT&#125;&quot;</code></p>
+<p>将其改为自己的路径</p>
+<p>3下载时记得下载安全版否则没有dll文件</p>
+<p>4注释不能和代码在一行</p>
+<p>5注意版本问题，php必须与apache版本一致</p>
+<p>6php文件不要用中文</p>
+<p>7由于mysql 8的某些特性，即使配置成功后也无法进行数据库访问，进入数据库，输入以下指令</p>
+<p><code>ALTER USER &#39;你的用户名&#39;@&#39;localhost&#39; IDENTIFIED WITH mysql_native_password BY &#39;你的密码&#39;;</code></p>
+<p>文献来源</p>
+<p><code>https://www.jianshu.com/p/65fcdbdf29fb</code></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/05/24/php/" data-id="cl3k3vvtg00079ov4g2w29hwp" data-title="PHP" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-calculate-md" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/05/24/calculate-md/" class="article-date">
+  <time class="dt-published" datetime="2022-05-24T12:00:26.685Z" itemprop="datePublished">2022-05-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/05/24/calculate-md/">算法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="计入立断"><a href="#计入立断" class="headerlink" title="计入立断"></a>计入立断</h2><p>相信大家都学过一元n次多项式的书写规则，现在给出多项式的系数，请你帮忙写出这个多项式。</p>
+<ol>
+<li><p>多项式中自变量为 x，从左到右按照次数递减顺序给出多项式。多项式中只包含系数不为 0 的项。保证n次项系数不为0。</p>
+</li>
+<li><p>如果多项式n次项系数为正，则多项式开头不出现“+”号。</p>
+</li>
+<li><p>如果 x 的指数大于 1，则接下来紧跟的指数部分的形式为“x^b”，其中 b 为 x 的指数；如果 x 的指数为 1，则接下来紧跟的指数部分形式为“x”；如果 x 的指数为 0，则仅需输出系数即可。</p>
+</li>
+<li><p>多项式中，多项式的开头、结尾不含多余的空格。</p>
+</li>
+<li><p>输入样例1:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">5 </span><br><span class="line">10 -1 1 -3 0 10 </span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例1"><a href="#输出样例1" class="headerlink" title="输出样例1:"></a>输出样例1:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">10x^5-x^4+x^3-3x^2+10</span><br></pre></td></tr></table></figure>
+
+<p>###输入样例2</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3 </span><br><span class="line">-5 0 0 1 </span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例2"><a href="#输出样例2" class="headerlink" title="输出样例2:"></a>输出样例2:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-5x^3+1</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">在输入一些已经排好的顺序的数据时，不一定需要我们再次处理，建立数组。</span><br><span class="line">而是可以直接在输入时就进行判断，成立就输入就存入，不成立就continue</span><br><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">	int n, m;</span><br><span class="line">	</span><br><span class="line">	scanf(&quot;%d&quot;, &amp;n);</span><br><span class="line">	for (int i = n; i &gt;= 0; i--) &#123;</span><br><span class="line">		scanf(&quot;%d&quot;, &amp;m);</span><br><span class="line">		if (m) &#123;</span><br><span class="line">			if (i != n &amp;&amp; m &gt; 0)  printf(&quot;+&quot;);</span><br><span class="line">			if (m == -1 &amp;&amp; i)     printf(&quot;-&quot;);</span><br><span class="line">			if (abs(m) &gt; 1 || i == 0)  printf(&quot;%d&quot;, m);</span><br><span class="line">			if (i &gt; 1)   printf(&quot;x^%d&quot;, i);</span><br><span class="line">			if (i == 1)  printf(&quot;x&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/05/24/calculate-md/" data-id="cl3k3vvta00029ov4hseo0dub" data-title="算法" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/05/24/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2022-05-24T11:57:43.698Z" itemprop="datePublished">2022-05-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/05/24/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/05/24/hello-world/" data-id="cl3k3vvtd00049ov4hzac83vo" data-title="Hello World" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-github" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/11/github/" class="article-date">
+  <time class="dt-published" datetime="2022-04-11T13:05:11.000Z" itemprop="datePublished">2022-04-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/04/11/github/">github</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h1><h2 id="配置git"><a href="#配置git" class="headerlink" title="配置git"></a>配置git</h2><p>在本地创建ssh key;</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;your_email@youremail.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>后面的<a href="mailto:&#x79;&#111;&#117;&#114;&#x5f;&#x65;&#x6d;&#x61;&#x69;&#108;&#x40;&#x79;&#111;&#x75;&#x72;&#101;&#109;&#x61;&#105;&#x6c;&#46;&#x63;&#111;&#109;">&#x79;&#111;&#117;&#114;&#x5f;&#x65;&#x6d;&#x61;&#x69;&#108;&#x40;&#x79;&#111;&#x75;&#x72;&#101;&#109;&#x61;&#105;&#x6c;&#46;&#x63;&#111;&#109;</a>改为你在github上注册的邮箱，之后会要求确认路径和输入密码，我们这使用默认的一路回车就行。成功的话会在~&#x2F;下生成.ssh文件夹，进去，打开id_rsa.pub，复制里面的key。</p>
+<p>回到github上，进入 Account Settings（账户配置），左边选择SSH Keys，Add SSH Key,title随便填，粘贴在你电脑上生成的key。</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/05/github-account.jpg" alt="img"></p>
+<p>为了验证是否成功，在git bash下输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>如果是第一次的会提示是否continue，输入yes就会看到：You’ve successfully authenticated, but GitHub does not provide shell access 。这就表示已成功连上github。</p>
+<p>接下来我们要做的就是把本地仓库传到github上去，在此之前还需要设置username和email，因为github每次commit都会记录他们。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;your name&quot;</span><br><span class="line">$ git config --global user.email &quot;your_email@youremail.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>进入要上传的仓库，右键git bash，添加远程地址：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github.com:yourName/yourRepo.git</span><br></pre></td></tr></table></figure>
+
+<p>后面的yourName和yourRepo表示你再github的用户名和刚才新建的仓库，加完之后进入.git，打开config，这里会多出一个remote “origin”内容，这就是刚才添加的远程地址，也可以直接修改config来配置远程地址。</p>
+<p>创建新文件夹，打开，然后执行<code> git init</code> 以创建新的 git 仓库。</p>
+<h2 id="检出仓库"><a href="#检出仓库" class="headerlink" title="检出仓库"></a>检出仓库</h2><p>执行如下命令以创建一个本地仓库的克隆版本：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone /path/to/repository </span><br></pre></td></tr></table></figure>
+
+<p>如果是远端服务器上的仓库，你的命令会是这个样子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone username@host:/path/to/repository</span><br></pre></td></tr></table></figure>
+
+<p>更新与合并</p>
+<p>要更新你的本地仓库至最新改动，执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
+
+<p>以在你的工作目录中 <em>获取（fetch）</em> 并 <em>合并（merge）</em> 远端的改动。<br>要合并其他分支到你的当前分支（例如 master），执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge &lt;branch&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在这两种情况下，git 都会尝试去自动合并改动。遗憾的是，这可能并非每次都成功，并可能出现<em>冲突（conflicts）</em>。 这时候就需要你修改这些文件来手动合并这些<em>冲突（conflicts）</em>。改完之后，你需要执行如下命令以将它们标记为合并成功：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在合并改动之前，你可以使用如下命令预览差异：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`git diff &lt;source_branch&gt; &lt;target_branch&gt;`</span><br></pre></td></tr></table></figure>
+
+<h2 id="删除关联"><a href="#删除关联" class="headerlink" title="删除关联"></a>删除关联</h2><p>如果添加的时候地址写错了，或者就是想删除远程库，可以用<code>git remote rm &lt;name&gt;</code>命令。使用前，建议先用<code>git remote -v</code>查看远程库信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git remote -v</span><br><span class="line">origin  git@github.com:michaelliao/learn-git.git (fetch)</span><br><span class="line">origin  git@github.com:michaelliao/learn-git.git (push)</span><br></pre></td></tr></table></figure>
+
+<p>然后，根据名字删除，比如删除<code>origin</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote rm origin</span><br></pre></td></tr></table></figure>
+
+<p>此处的“删除”其实是解除了本地和远程的绑定关系，并不是物理上删除了远程库。远程库本身并没有任何改动。要真正删除远程库，需要登录到GitHub，在后台页面找到删除按钮再删除。</p>
+<h2 id="加入本地仓库与提交"><a href="#加入本地仓库与提交" class="headerlink" title="加入本地仓库与提交"></a>加入本地仓库与提交</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git add 文件名</span><br><span class="line">预添加到本地仓库</span><br><span class="line">git commit -m &quot;标记&quot;</span><br><span class="line">正式提交到本地仓库</span><br><span class="line">git push</span><br><span class="line">提交到远程仓库（第一次用 git push -u origin master）</span><br></pre></td></tr></table></figure>
+
+<h2 id="查看与删除"><a href="#查看与删除" class="headerlink" title="查看与删除"></a>查看与删除</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git ls-files</span><br><span class="line">查看仓库已经提交的所有文件及其子文件</span><br><span class="line">git status</span><br><span class="line">查看仓库预提交的所有文件</span><br><span class="line">git rm -r 文件名</span><br><span class="line">删除本地仓库的文件</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/11/github/" data-id="cl3k3vvte00059ov4clz9fjr9" data-title="github" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-mysql" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/08/mysql/" class="article-date">
+  <time class="dt-published" datetime="2022-03-08T09:10:18.000Z" itemprop="datePublished">2022-03-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/03/08/mysql/">mysql</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Mysql"><a href="#Mysql" class="headerlink" title="Mysql"></a>Mysql</h1><h3 id="Mysql-1"><a href="#Mysql-1" class="headerlink" title="Mysql"></a>Mysql</h3><h4 id="mysql安装（安装版）"><a href="#mysql安装（安装版）" class="headerlink" title="mysql安装（安装版）"></a>mysql安装（安装版）</h4><ul>
+<li><p>mysql默认端口：3306</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">* mysql 安装默认账号： root</span><br><span class="line">* %mysql%/my.ini ， mysql 数据库的配置文件</span><br><span class="line">* 端口号： port=3306</span><br><span class="line">* mysql 默认字符集： default-character-set=utf8</span><br><span class="line">* mysql数据库目录：datadir=&quot;C:/java/MySQL/MySQL Server 5.5/Data/&quot;</span><br><span class="line">    </span><br><span class="line">* mysql安装默认账号：root</span><br><span class="line">    </span><br><span class="line">* %mysql%/my.ini，mysql数据库的配置文件</span><br><span class="line">    </span><br><span class="line">* 端口号：port=3306</span><br><span class="line">    </span><br><span class="line">* mysql默认字符集：default-character-set=utf8</span><br><span class="line">    </span><br><span class="line">* mysql 数据库目录： datadir=&quot;C:/java/MySQL/MySQL Server  5.5/Data/&quot;</span><br><span class="line">* mysql 安装默认账号： root</span><br><span class="line">* %mysql%/my.ini ， mysql 数据库的配置文件</span><br><span class="line">* 端口号： port=3306</span><br><span class="line">* mysql默认字符集：default-character-set=utf8</span><br><span class="line">    </span><br><span class="line">* mysql数据库目录：datadir=&quot;C:/java/MySQL/MySQL Server 5.5/Data/&quot;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="mysql启动"><a href="#mysql启动" class="headerlink" title="mysql启动"></a>mysql启动</h4><ul>
+<li><p>&#96;&#96;&#96;</p>
+<ul>
+<li><p>windows 服务中：启动 &#x2F; 停止</p>
+</li>
+<li><p>cmd &gt; mysqld –console<br>mysql 登录</p>
+</li>
+<li><p>格式 1 ： cmd &gt; mysql -h 主机域名 &#x2F;IP  -u 账号   -p[ 密码 ]</p>
+</li>
+<li><p>格式 2 ： cmd &gt; mysql –host&#x3D; 主机域名 &#x2F;IP  –user&#x3D; 账号  –password[&#x3D; 密码 ]</p>
+</li>
+<li><p>mysql 帮助： cmd &gt; mysql -?</p>
+</li>
+<li><p>访问指定主机的 mysql 服务器：  cmd &gt; mysql -h192.168.1.204 -uroot -p1234<br>mysql 绿化版</p>
+</li>
+<li><p>解压，复制 ini 文件 my-small.ini ，将名称修改为 my.ini</p>
+</li>
+<li><p>配置系统变量 path</p>
+</li>
+<li><p>注册与移除</p>
+</li>
+<li><p>将 mysql 注册为系统服务： cmd &gt; C:\java\mysql-5.5.27-win32\bin&gt;mysqld –install</p>
+</li>
+<li><p>注意：必须将当前目录切换为%mysql%&#x2F;bin</p>
+</li>
+<li><p>将mysql移除系统服务：cmd &gt; C:\java\mysql-5.5.27-win32\bin&gt;mysqld –remove</p>
+</li>
+</ul>
+<h4 id="启动与停止-绿化版"><a href="#启动与停止-绿化版" class="headerlink" title="启动与停止(绿化版)"></a>启动与停止(绿化版)</h4><ul>
+<li><p>使用 windows 命令启动： cmd &gt; net start mysql</p>
+</li>
+<li><p>注意： win7 ，启动不能成功，需要以 “ 管理员身份 ” 运行 cmd</p>
+</li>
+<li><p>使用 windows 命令停止： cmd &gt; net stop mysql</p>
+</li>
+<li><p>绿化版root账号没有密码</p>
+</li>
+<li><p>cmd  &gt; mysql -uroot -p   回车两次</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#### 常用的显示命令</span><br><span class="line"></span><br><span class="line"> * ```</span><br><span class="line">   *  显示当前数据库服务器中的数据库列表， mysql&gt; show databases;</span><br><span class="line">   *  注意： %mysql%/data/mysql 数据库， mysql 的核心数据库，数据库的个数，表的个数，用户等</span><br><span class="line">   *  使用数据库： mysql&gt; use  库名 ;</span><br><span class="line">   *  显示数据库中的数据表： mysql&gt;show tables;</span><br><span class="line">   *  显示当前所使用的数据库名称：  mysql&gt; select database();   ，结果为 null 说明没有选择数据库</span><br><span class="line">   *  显示当前数据库的状态 ：  mysql&gt; status;</span><br><span class="line">   *  显示当前数据库中某表的表结构 （ DESCRIBE  ）：  mysql&gt; desc user;</span><br><span class="line">   *  显示所支持的字符集：  show character set;</span><br><span class="line">   *  显示系统变量：mysql&gt; show variables;</span><br><span class="line">     </span><br><span class="line">   *  显示执行内容系统变量，显示与字符集有关的系统变量：mysql&gt; show variables like &#x27;%char%&#x27;;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h4 id="mysql账号管理"><a href="#mysql账号管理" class="headerlink" title="mysql账号管理"></a>mysql账号管理</h4><ul>
+<li>&#96;&#96;&#96;<ul>
+<li><p>查询账号： mysql &gt; select * from user;   或   mysql &gt; select host,user,password from user;</p>
+</li>
+<li><p>创建账号： mysql &gt; create user  账号   [ identified by ‘ 密码 ‘]</p>
+</li>
+<li><p>账号：</p>
+</li>
+<li><p>格式： ‘user‘@’host’</p>
+</li>
+<li><p>默认账号， ‘ 账号 ‘ ，表示创建一个账号， host 字段为 % ， % 表示允许所有人访问</p>
+</li>
+<li><p>例如： ‘itcast‘@’192.168.1.100’, 只允许指定 IP 的主机进行访问</p>
+</li>
+<li><p>修改密码： set password for  账号  &#x3D; password(‘ 密码 ‘);</p>
+</li>
+<li><p>删除账号： drop user  账号 ;</p>
+</li>
+<li><p>授权： grant  权限  on  数据库 . 表  to  账号  [with grant option]</p>
+</li>
+<li><p>权限： all 表示所有权限</p>
+</li>
+<li><p>数据库.表 ： <em>.</em> 所有数据库的所有表</p>
+</li>
+<li><p>with grant option，当前账号是否具有将自己的权限授予其他人</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h4 id="root账号密码丢失"><a href="#root账号密码丢失" class="headerlink" title="root账号密码丢失"></a>root账号密码丢失</h4><ul>
+<li>&#96;&#96;&#96;<ul>
+<li><p>使用跳过权限验证启动mysql服务：cmd &gt; mysqld –console –skip-grant-tables</p>
+</li>
+<li><p>修改密码，只能使用update语句</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">mysql&gt; update user set password = password(&#x27;123456&#x27;) where host=&#x27;localhost&#x27; and user=&#x27;root&#x27;;</span><br><span class="line"></span><br><span class="line">#### mysql异常</span><br><span class="line"></span><br><span class="line"> * ```</span><br><span class="line">   *  密码不正确</span><br><span class="line">   *  ERROR 1045 (28000): Access denied for user &#x27;root&#x27;@&#x27;localhost&#x27; (using password: YES)</span><br><span class="line">   *  没有使用数据库</span><br><span class="line">   *  ERROR 1046 (3D000): No database selected</span><br><span class="line">   *  没有权限</span><br><span class="line">   *  ERROR 1044 (42000): Access denied for user &#x27;itcast&#x27;@&#x27;%&#x27; to database &#x27;mysql&#x27;</span><br><span class="line">   *  如果 mysql 启动中，将移除服务时</span><br><span class="line">   *  Failed to remove the service because the service is running</span><br><span class="line">   *  Stop the service and try again</span><br><span class="line">   *  使用 net 命令启动错误</span><br><span class="line">   *  C:\Documents and Settings\Administrator&gt;net start mysql</span><br><span class="line">   *  发生系统错误  3 。</span><br><span class="line">   *  系统找不到指定的路径。</span><br><span class="line">   *  mysql 服务器没有启动</span><br><span class="line">   *  ERROR 2003 (HY000): Can&#x27;t connect to MySQL server on &#x27;localhost&#x27; (10061)</span><br><span class="line">   *  表必须具有一个字段</span><br><span class="line">     </span><br><span class="line">   *  ERROR 1113 (42000): A table must have at least 1 column</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h4 id="中文乱码"><a href="#中文乱码" class="headerlink" title="中文乱码"></a>中文乱码</h4><ul>
+<li><p>&#96;&#96;&#96;</p>
+<ul>
+<li><p>在 my.ini 文件没有设置默认编码</p>
+</li>
+<li><p>在创建数据库时，指定数据的编码</p>
+</li>
+<li><p>表的创建，默认使用数据库的编码</p>
+</li>
+<li><p>character_set_database   | utf8</p>
+</li>
+<li><p>在 my.ini 文件设置默认编码</p>
+</li>
+<li><p>查询当前数据库设置的编码： mysql &gt; show variables like ‘%char%’;</p>
+</li>
+<li><p>结果：<br>character_set_client     | gbk  – 客户端<br> character_set_connection | gbk  – 链接<br> character_set_results    | gbk  – 返回结果</p>
+</li>
+<li><p>如果 3 项为 UTF-8 ，使用 cmd( 默认编码 GBK) 进行操作，将出现乱码</p>
+</li>
+<li><p>解决办法</p>
+</li>
+<li><p>设置编码：set names gbk;</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">#### 添加主键:</span><br><span class="line"></span><br><span class="line"> 1. ```</span><br><span class="line">    </span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="2">
+<li><p>创建表，定义字段时，给字段添加约束<br>create table  a(<br> id varchar(32) primary key,<br>);</p>
+</li>
+<li><p>创建表，定义字段之后，在约束区域添加<br>create table  b(<br>   id varchar(32),<br>   constraint primary key(id)<br> );</p>
+</li>
+<li><p>创建表之后，修改表结构，设置主键<br>create table  c(<br>   id varchar(32),<br>  );<br> alter table primarykey_3 add constraint primary key(id);</p>
+</li>
+</ol>
+</li>
+</ul>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">#### mySQL   语法介绍</span><br><span class="line"></span><br><span class="line">  * ```</span><br><span class="line">      *  结构：创建 create ，修改 alter ，删除 drop</span><br><span class="line">     *  数据：录入insert，更新update，删除delete</span><br><span class="line">    </span><br><span class="line">     *  查询数据：select</span><br></pre></td></tr></table></figure>
+
+<p>​    </p>
+<h4 id="DDL-数据定义语言"><a href="#DDL-数据定义语言" class="headerlink" title="DDL: 数据定义语言"></a>DDL: 数据定义语言</h4><ul>
+<li>&#96;&#96;&#96;<ul>
+<li><p>数据库 database</p>
+</li>
+<li><p>创建数据库： mysql &gt; create database  数据库名称 ;</p>
+</li>
+<li><p>mysql &gt; create database  名称  character set  字符集 ;   –  注意： UTF-8 书写为 UTF8</p>
+</li>
+<li><p>删除数据库： mysql &gt; drop database  数据库名称</p>
+</li>
+<li><p>表 table</p>
+</li>
+<li><p>创建表： mysql &gt; create table  表名 ( 字段的描述 );</p>
+</li>
+<li><p>显示当前表的 sql 语句： mysql &gt; show create table  表名 ;</p>
+</li>
+<li><p>修改表名： mysql &gt; alter table  表名  rename  新名称 ;</p>
+</li>
+<li><p>删除表： mysql &gt; drop table  表名 ;</p>
+</li>
+<li><p>字段 column</p>
+</li>
+<li><p>添加字段： mysql &gt; alter table  表名  add column  字段描述</p>
+</li>
+<li><p>修改字段：</p>
+</li>
+<li><p>修改字段名称： mysql&gt; alter table  表名  change  旧字段名 新字段名 + 类型 ;</p>
+</li>
+<li><p>修改字段类型：mysql&gt; alter table 表名 modify column 字段名称 类型;</p>
+</li>
+<li><p>删除字段：mysql &gt; alter table 表名 drop column 字段名称</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">#### DML：数据操纵语言</span><br><span class="line"></span><br><span class="line"> * ```</span><br><span class="line">   * 插入数据： mysql &gt; insert into  表名 [( 字段名称 ,...)] values( 字段值 ,...)</span><br><span class="line">   * 修改数据：mysql &gt; update 表名 set 字段名称 = 字段值 , 字段名称 = 字段值 ... [ where 字段名称=字段值]</span><br><span class="line">     </span><br><span class="line">   * 删除数据：mysql &gt; delete from 表名 [ where 条件]</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h4 id="DQL-数据查询语言"><a href="#DQL-数据查询语言" class="headerlink" title="DQL: 数据查询语言"></a>DQL: 数据查询语言</h4><ul>
+<li><p>&#96;&#96;&#96;</p>
+<ul>
+<li>查询所有<br>sql &gt; select * from users;<br> mysql &gt; select id,firstname,secondname,age,count from users;  </li>
+<li>查询部分信息<br>mysql &gt; select id,age from users;</li>
+<li>查询用户编号、姓名，及格 (60)<br>mysql &gt; select id,firstname,secondname,count from users;<br> mysql &gt; select id,concat(firstname,secondname),count from users;<br> mysql &gt; select id,concat(firstname,secondname),count - 60 from users;</li>
+<li>修改上面查询显示字段名称，用 “ 姓名 “ 表示姓名，用 “ 及格 “ 表示及格</li>
+<li>别名格式：字段  [AS]  别名<br>mysql &gt; select id,concat(firstname,secondname) as  姓名 ,count - 60  及格  from users;</li>
+<li>注意：别名名称中不能包含空格，如果必须使用空格，需要将别名使用引号括住</li>
+</ul>
+<p>mysql &gt; select id,concat(firstname,secondname) as ‘姓 名’,count - 60 ‘及 格’ from users;</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="数据库的备份"><a href="#数据库的备份" class="headerlink" title="数据库的备份"></a>数据库的备份</h4><pre><code>
+ cmd &gt; mysqldump -uroot -p1234 ebookstore &gt; d:/1.sql
+ 格式： mysqldump -u 账号  -p 密码    数据库名称  &gt;  位置
+数据库的还原
+
+ *  注意：必须手动创建数据库
+  cmd &gt; mysql -uroot -p1234 back &lt; d:/1.sql
+
+格式：mysql  -u账号 -p密码    数据库名称 &lt; 位置
+</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/03/08/mysql/" data-id="cl3k3vvtf00069ov471l0bi1i" data-title="mysql" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-css" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/06/css/" class="article-date">
+  <time class="dt-published" datetime="2022-03-06T07:52:22.000Z" itemprop="datePublished">2022-03-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/03/06/css/">前端</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><h2 id="相关属性"><a href="#相关属性" class="headerlink" title="相关属性"></a>相关属性</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">color</span> 文本颜色</span><br><span class="line"><span class="attribute">background</span> 背景颜色</span><br><span class="line"><span class="attribute">text-decoration</span> 文本修饰</span><br><span class="line"><span class="attribute">text-indent</span> 首行缩进 <span class="selector-tag">em</span> 相对的一个文字大小</span><br><span class="line"><span class="attribute">line-height</span> 行间距，上间距，下间距</span><br><span class="line"><span class="attribute">text-align</span>  文本对齐方式</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="CSS的引入方式"><a href="#CSS的引入方式" class="headerlink" title="CSS的引入方式"></a>CSS的引入方式</h2><h3 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;stycle&gt;</span><br><span class="line"><span class="selector-tag">p</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">&lt;/stycle&gt;</span><br><span class="line"></span><br><span class="line">一般放在head的地方</span><br></pre></td></tr></table></figure>
+
+<h3 id="行内样式表"><a href="#行内样式表" class="headerlink" title="行内样式表"></a>行内样式表</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span> stycle=&quot; &quot;&gt;</span><br><span class="line">用于修改部分简单的样式</span><br></pre></td></tr></table></figure>
+
+<h3 id="外部样式表"><a href="#外部样式表" class="headerlink" title="外部样式表"></a>外部样式表</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//建立<span class="selector-class">.css</span>文件</span><br><span class="line">&lt;link rel=&quot;styclesheel&quot; hetf=&quot; &quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="样式选择器"><a href="#样式选择器" class="headerlink" title="样式选择器"></a>样式选择器</h2><h3 id="子代选择器"><a href="#子代选择器" class="headerlink" title="子代选择器"></a>子代选择器</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span> <span class="selector-tag">li</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="子元素选择器"><a href="#子元素选择器" class="headerlink" title="子元素选择器"></a>子元素选择器</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.nav</span>&gt;<span class="selector-tag">a</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="并集选择器"><a href="#并集选择器" class="headerlink" title="并集选择器"></a>并集选择器</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>,<span class="selector-tag">p</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span>,<span class="selector-tag">p</span>,<span class="selector-tag">li</span> <span class="selector-tag">a</span>,<span class="selector-class">.nav</span> <span class="selector-tag">a</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">//喜欢竖着写</span><br></pre></td></tr></table></figure>
+
+<h3 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h3><h4 id="链接伪类选择器（针对标签a"><a href="#链接伪类选择器（针对标签a" class="headerlink" title="链接伪类选择器（针对标签a)"></a>链接伪类选择器（针对标签a)</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span> 选择未被访问的链接</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span> 选择所有已被访问的链接</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> 选择鼠标指针位于其上的链接</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> 选择活动链接(鼠标按下未弹起的链接)</span><br><span class="line">必须按顺序</span><br></pre></td></tr></table></figure>
+
+<h4 id="focus-伪类选择器（针对标签input）"><a href="#focus-伪类选择器（针对标签input）" class="headerlink" title=":focus 伪类选择器（针对标签input）"></a>:focus 伪类选择器（针对标签input）</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">input</span> <span class="selector-pseudo">:focus</span>&#123;</span><br><span class="line">    <span class="attribute">background-color</span>:red;</span><br><span class="line">&#125;</span><br><span class="line">谁获得了光标，谁修改stycle</span><br></pre></td></tr></table></figure>
+
+<h2 id="元素的显示模式"><a href="#元素的显示模式" class="headerlink" title="元素的显示模式"></a>元素的显示模式</h2><h4 id="块元素"><a href="#块元素" class="headerlink" title="块元素"></a>块元素</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;h&gt; &lt;<span class="selector-tag">p</span>&gt; &lt;<span class="selector-tag">div</span>&gt; &lt;<span class="selector-tag">ul</span>&gt; &lt;<span class="selector-tag">ol</span>&gt; &lt;<span class="selector-tag">li</span>&gt;</span><br><span class="line"><span class="number">1</span>.自己独占一行</span><br><span class="line"><span class="number">2</span>.高度，宽度，边距都可以改变</span><br><span class="line"><span class="number">3</span>.默认与父级一样宽</span><br><span class="line"><span class="number">4</span>.是一个容器，可以放其他东西</span><br><span class="line"><span class="number">5</span>.文字类的元素不能使用块级元素</span><br><span class="line">如&lt;<span class="selector-tag">p</span>&gt; 里不应该再放其他的块元素</span><br></pre></td></tr></table></figure>
+
+<h4 id="行元素"><a href="#行元素" class="headerlink" title="行元素"></a>行元素</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>.在同行上可以设置多个行元素</span><br><span class="line"><span class="number">2</span>.设置宽和高是无效的</span><br><span class="line"><span class="number">3</span>.本身的东西是对内容进行适应的</span><br><span class="line"><span class="number">4</span>.&lt;<span class="selector-tag">a</span>&gt;不能再放&lt;<span class="selector-tag">a</span>&gt;</span><br><span class="line"><span class="number">5</span>.行元素中可以放块元素</span><br><span class="line"><span class="number">6</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="显示模式的转换"><a href="#显示模式的转换" class="headerlink" title="显示模式的转换"></a>显示模式的转换</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="selector-tag">a</span>&#123;</span><br><span class="line">	<span class="attribute">display</span>:block;</span><br><span class="line">    将行元素设置为块元素，就可以设置长和宽</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>:inline;</span><br><span class="line">    将块元素设置为行元素，就可以同行多个</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">span</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>:inline-block;</span><br><span class="line">    设置为行内块</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="文字垂直居中的方法"><a href="#文字垂直居中的方法" class="headerlink" title="文字垂直居中的方法"></a>文字垂直居中的方法</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">让文字行高等于块的高度，就可以伪居中</span><br><span class="line">line-height:行高</span><br></pre></td></tr></table></figure>
+
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><h3 id="背景颜色"><a href="#背景颜色" class="headerlink" title="背景颜色"></a>背景颜色</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">默认</span><br><span class="line">transparent 透明</span><br></pre></td></tr></table></figure>
+
+<h3 id="背景图片-控制图片位置的最好方法"><a href="#背景图片-控制图片位置的最好方法" class="headerlink" title="背景图片(控制图片位置的最好方法)"></a>背景图片(控制图片位置的最好方法)</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">载人图片</span><br><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line"><span class="attribute">background</span>:<span class="built_in">url</span>(<span class="string">&quot;....&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">平铺方式</span><br><span class="line"><span class="attribute">background-repeat</span>:repeat | no-repeat |repeat-x |repeat-y</span><br><span class="line">背景颜色会在背景图片的空隙显示</span><br></pre></td></tr></table></figure>
+
+<h4 id="位置控制"><a href="#位置控制" class="headerlink" title="位置控制"></a>位置控制</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">background-position:x y;</span><br><span class="line">x,y 取值：百分数，浮点数和单位标识符组成的长度值</span><br><span class="line">或方位词：如 top，center，botton，left，righ</span><br><span class="line">x,y 用精确单位，单位为px，像素</span><br></pre></td></tr></table></figure>
+
+<h4 id="背景图像滚动与固定"><a href="#背景图像滚动与固定" class="headerlink" title="背景图像滚动与固定"></a>背景图像滚动与固定</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background-attachment</span>:<span class="built_in">scroll</span>(滚动) | <span class="built_in">fixed</span>(固定)</span><br></pre></td></tr></table></figure>
+
+<h4 id="背景简写"><a href="#背景简写" class="headerlink" title="背景简写"></a>背景简写</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background</span>:transparent <span class="built_in">url</span>(<span class="string">....</span>) repeat-y fixed top;</span><br></pre></td></tr></table></figure>
+
+<h4 id="背景半透明"><a href="#背景半透明" class="headerlink" title="背景半透明"></a>背景半透明</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background</span>:<span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.3</span>) //最后一个参数是透明度，<span class="number">0</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="弹性布局"><a href="#弹性布局" class="headerlink" title="弹性布局"></a>弹性布局</h2><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/hellocd/p/10443237.html">弹性布局（display:flex;）属性详解 - cdgogo - 博客园 (cnblogs.com)</a></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">display</span>:flex</span><br><span class="line">#FLex 作为一种容器</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">在 Flexbox 模型中，有三个核心概念：</span><br><span class="line">– <span class="attribute">flex</span> 项（注：也称 <span class="attribute">flex</span> 子元素），需要布局的元素</span><br><span class="line">– <span class="attribute">flex</span> 容器，其包含 <span class="attribute">flex</span> 项</span><br><span class="line">– 排列方向（<span class="attribute">direction</span>），这决定了 <span class="attribute">flex</span> 项的布局方向</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img2018.cnblogs.com/blog/1287814/201902/1287814-20190227105554256-71254015.png" alt="img"></p>
+<p><img src="https://img2018.cnblogs.com/blog/1287814/201902/1287814-20190227135037726-1170549985.png" alt="img"></p>
+<p>参考：<a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2018/10/flexbox-form.html">http://www.ruanyifeng.com/blog/2018/10/flexbox-form.html</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html">http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html</a></p>
+<h2 id="positon"><a href="#positon" class="headerlink" title="positon"></a>positon</h2><h3 id="定位类型"><a href="#定位类型" class="headerlink" title="定位类型"></a><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/position#%E5%AE%9A%E4%BD%8D%E7%B1%BB%E5%9E%8B">定位类型</a></h3><ul>
+<li><strong>定位元素（positioned element）</strong>是其<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/computed_value">计算后</a>位置属性为 <code>relative</code>, <code>absolute</code>, <code>fixed </code>或 <code>sticky</code> 的一个元素（换句话说，除<code>static</code>以外的任何东西）。</li>
+<li><strong>相对定位元素（<strong><strong>relatively positioned element</strong></strong>）</strong>是<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/computed_value">计算后</a>位置属性为 <code>relative </code>的元素。</li>
+<li><strong>绝对定位元素（absolutely positioned element）</strong>是<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/computed_value">计算后</a>位置属性为 <code>absolute</code> 或 <code>fixed</code> 的元素。</li>
+<li><strong>粘性定位元素<strong><strong>（</strong></strong>stickily positioned element****）</strong>是<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/computed_value">计算后</a>位置属性为 <code>sticky</code> 的元素。</li>
+</ul>
+<p>大多数情况下，<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/height"><code>height</code></a>和<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/width"><code>width</code></a> 被设定为auto的绝对定位元素，按其内容大小调整尺寸。但是，被绝对定位的元素可以通过指定<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/top"><code>top</code></a>和<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/bottom"><code>bottom</code></a> ，保留<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/height"><code>height</code></a>未指定（即<code>auto</code>），来填充可用的垂直空间。它们同样可以通过指定<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/left"><code>left</code></a> 和 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/right"><code>right</code></a>并将<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/width"><code>width</code></a> 指定为<code>auto</code>来填充可用的水平空间。</p>
+<p>除了刚刚描述的情况（绝对定位元素填充可用空间）：</p>
+<ul>
+<li>如果 <code>top</code> 和 <code>bottom</code> 都被指定（严格来说，这里指定的值不能为 <code>auto</code> ），<code>top</code> 优先。</li>
+<li>如果指定了 <code>left</code> 和 <code>right</code> ，当 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/direction"><code>direction</code></a>设置为 <code>ltr</code>（水平书写的中文、英语）时 <code>left</code> 优先， 当<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/direction"><code>direction</code></a>设置为 <code>rtl</code>（阿拉伯语、希伯来语、波斯语由右向左书写）时 <code>right</code> 优先。</li>
+</ul>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/position#%E8%AF%AD%E6%B3%95">语法</a></h2><p><code>position</code> 属性被指定为从下面的值列表中选择的单个关键字。</p>
+<h3 id="取值"><a href="#取值" class="headerlink" title="取值"></a><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/position#%E5%8F%96%E5%80%BC">取值</a></h3><ul>
+<li><p><code>static</code></p>
+<p>该关键字指定元素使用正常的布局行为，即元素在文档常规流中当前的布局位置。此时 <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> 和 <code>z-index </code>属性无效。</p>
+</li>
+<li><p><code>relative</code></p>
+<p>该关键字下，元素先放置在未添加定位时的位置，再在不改变页面布局的前提下调整元素位置（因此会在此元素未添加定位时所在位置留下空白）。position:relative 对 table-*-group, table-row, table-column, table-cell, table-caption 元素无效。</p>
+</li>
+<li><p><code>absolute</code></p>
+<p>元素会被移出正常文档流，并不为元素预留空间，通过指定元素相对于最近的非 static 定位祖先元素的偏移，来确定元素位置。绝对定位的元素可以设置外边距（margins），且不会与其他边距合并。</p>
+</li>
+<li><p><code>fixed</code></p>
+<p>元素会被移出正常文档流，并不为元素预留空间，而是通过指定元素相对于屏幕视口（viewport）的位置来指定元素位置。元素的位置在屏幕滚动时不会改变。打印时，元素会出现在的每页的固定位置。<code>fixed</code> 属性会创建新的层叠上下文。当元素祖先的 <code>transform</code>, <code>perspective</code> 或 <code>filter</code> 属性非 <code>none</code> 时，容器由视口改为该祖先。</p>
+</li>
+<li><p><code>sticky</code></p>
+<p>元素根据正常文档流进行定位，然后相对它的<em>最近滚动祖先（nearest scrolling ancestor）</em>和 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">containing block</a> (最近块级祖先 nearest block-level ancestor)，包括table-related元素，基于<code>top</code>, <code>right</code>, <code>bottom</code>, 和 <code>left</code>的值进行偏移。偏移值不会影响任何其他元素的位置。</p>
+<p>该值总是创建一个新的<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context">层叠上下文（stacking context</a>）。注意，一个sticky元素会“固定”在离它最近的一个拥有“滚动机制”的祖先上（当该祖先的<code>overflow</code> 是 <code>hidden</code>, <code>scroll</code>, <code>auto</code>, 或 <code>overlay</code>时），即便这个祖先不是最近的真实可滚动祖先。这有效地抑制了任何“sticky”行为（详情见<a target="_blank" rel="noopener" href="https://github.com/w3c/csswg-drafts/issues/865">Github issue on W3C CSSWG</a>）。</p>
+</li>
+</ul>
+<h3 id="常见语法"><a href="#常见语法" class="headerlink" title="常见语法"></a><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/position#%E5%B8%B8%E8%A7%81%E8%AF%AD%E6%B3%95">常见语法</a></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">static | relative | absolute | sticky | fixed</span><br></pre></td></tr></table></figure>
+
+<h1 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h1>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/03/06/css/" data-id="cl3k3vvtc00039ov4hriu7feq" data-title="前端" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-study-schedule" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/01/26/study-schedule/" class="article-date">
+  <time class="dt-published" datetime="2022-01-26T13:59:20.000Z" itemprop="datePublished">2022-01-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/01/26/study-schedule/">STUDY</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="STUFY"><a href="#STUFY" class="headerlink" title="STUFY"></a>STUFY</h1><h2 id="1-26"><a href="#1-26" class="headerlink" title="1.26"></a>1.26</h2><ol>
+<li>学习了showedpreferences储存</li>
+<li>学习了SQLife</li>
+<li></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/26/study-schedule/" data-id="cl3k3vvtm00089ov48z7jf331" data-title="STUDY" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-android" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/01/26/android/" class="article-date">
+  <time class="dt-published" datetime="2022-01-25T17:11:21.000Z" itemprop="datePublished">2022-01-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/01/26/android/">android</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><h3 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h3><h4 id="主键"><a href="#主键" class="headerlink" title="主键"></a>主键</h4><ul>
+<li><p>主关键字（主键，primary key）是被挑选出来，作表的行的惟一标识的候选关键字。一个表只有一个主关键字。主关键字又可以称为主键。主键可以由一个字段，也可以由多个字段组成，分别成为单字段主键或多字段主键。</p>
+</li>
+<li><p>主键具有唯一性</p>
+</li>
+<li><p>复合主键是指由多个字段（列）组成的主键</p>
+</li>
+</ul>
+<h3 id="SharedPreferences储存"><a href="#SharedPreferences储存" class="headerlink" title="SharedPreferences储存"></a>SharedPreferences储存</h3><ul>
+<li><p>将数据保存至SharedPreferences:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">SharedPreferences preferences=getSharedPreferences(&quot;user&quot;,Context.MODE_PRIVATE);</span><br><span class="line">Editor editor=preferences.edit();</span><br><span class="line">String name=&quot;xixi&quot;;</span><br><span class="line">String age=&quot;22&quot;;</span><br><span class="line">editor.putString(&quot;name&quot;, name);</span><br><span class="line">editor.putString(&quot;age&quot;, age);</span><br><span class="line">editor.commit();//editor.apply();</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">commit（）和apply（）之间的区别</span><br><span class="line"></span><br><span class="line">当我们使用SharedPreference时，我们可能会对这两个术语感到困惑。 基本上它们可能是相同的，所以让我们澄清commit（）和apply（）的区别。</span><br><span class="line"></span><br><span class="line">1.返回值：</span><br><span class="line"></span><br><span class="line">apply()提交而不返回指示成功或失败的布尔值。 如果保存工作， commit( ）返回true，否则返回false。</span><br><span class="line"></span><br><span class="line">2.速度：</span><br><span class="line">apply()更快。 commit()比较慢。</span><br><span class="line"></span><br><span class="line">3.异步与同步：</span><br><span class="line">apply() ：异步commit() ：同步</span><br><span class="line"></span><br><span class="line">4.原子：</span><br><span class="line">apply() ：atomic commit() ：atomic</span><br><span class="line"></span><br><span class="line">5.错误通知：</span><br><span class="line">apply() ：没有commit() ：是的</span><br></pre></td></tr></table></figure>
+
+
+<p>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/zhang31jian/article/details/23258065">https://blog.csdn.net/zhang31jian/article/details/23258065</a></p>
+</li>
+<li><p>从SharedPreferences获取数据:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SharedPreferences preferences=getSharedPreferences(&quot;user&quot;, Context.MODE_PRIVATE);</span><br><span class="line">String name=preferences.getString(&quot;name&quot;, &quot;defaultname&quot;); //格式</span><br><span class="line">String age=preferences.getString(&quot;age&quot;, &quot;0&quot;); //实例</span><br></pre></td></tr></table></figure>
+</li>
+<li></li>
+</ul>
+<h2 id="侧边栏空间的实现"><a href="#侧边栏空间的实现" class="headerlink" title="侧边栏空间的实现"></a>侧边栏空间的实现</h2><ol>
+<li><p>引入抽屉控件</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">#layout_main.xml内容</span><br><span class="line"></span><br><span class="line">&lt;androidx.drawerlayout.widget.DrawerLayout</span><br><span class="line">    xmlns:android=<span class="string">&quot;http://schemas.android.com/apk/res/android&quot;</span></span><br><span class="line">    android:id=<span class="string">&quot;@+id/drawer&quot;</span></span><br><span class="line">    android:layout_width=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">    android:layout_height=<span class="string">&quot;match_parent&quot;</span> &gt;</span><br><span class="line"></span><br><span class="line">    &lt;LinearLayout</span><br><span class="line">        android:layout_width=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">        android:layout_height=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">        android:orientation=<span class="string">&quot;vertical&quot;</span> &gt;</span><br><span class="line"></span><br><span class="line">        &lt;!--这里是主界面，content，该写什么写什么，加载的时候界面上只会显示这里面的内容--&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/LinearLayout&gt;</span><br><span class="line"></span><br><span class="line">    &lt;LinearLayout</span><br><span class="line">        android:id=<span class="string">&quot;@+id/drawer_1&quot;</span></span><br><span class="line">        android:layout_width=<span class="string">&quot;280dp&quot;</span></span><br><span class="line">        android:layout_height=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">        android:layout_gravity=<span class="string">&quot;start&quot;</span></span><br><span class="line">        android:orientation=<span class="string">&quot;vertical&quot;</span></span><br><span class="line">        android:background=<span class="string">&quot;#003671&quot;</span>&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;!--这里是左边抽屉，加载的时候不会显示，要通过手势侧边滑动或者代码控制才会显示--&gt;</span><br><span class="line">        &lt;!--侧边栏的大小由宽度layout_width控制--&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/LinearLayout&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;/androidx.drawerlayout.widget.DrawerLayout&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//先要通过findViewById获得这个侧边栏控件mDrawerLayout，然后可以通过事件监听打开和关闭抽屉</span><br><span class="line"></span><br><span class="line">//屏蔽手势操作，解锁参数DrawerLayout.LOCK_MODE_UNLOCKED</span><br><span class="line">mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);</span><br><span class="line">//如果只想屏蔽其中一边：</span><br><span class="line">//mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED,Gravity.LEFT);/</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//先要通过findViewById获得这个侧边栏控件mDrawerLayout，然后可以通过事件监听打开和关闭抽屉</span><br><span class="line">//打开抽屉</span><br><span class="line">mDrawerLayout.openDrawer(Gravity.LEFT);//同理，打开右边就是Gravity.RIGHT</span><br><span class="line">//关闭抽屉</span><br><span class="line">mDrawerLayout.closeDrawers();//关闭所有，其实两边也不会同时出来，所以关闭所有即可关闭任意一边</span><br><span class="line">//当然你也可以严谨一点，非要关闭一边</span><br><span class="line">//closeDrawer(Gravity.LEFT);//or Gravity.RIGHT</span><br></pre></td></tr></table></figure>
+
+<p>注意：需要先用findviewbyid()找到drawerlayout控件，即上文中的mDrawerlayout，和下文的m</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Mainactivity的内容</span></span><br><span class="line"><span class="keyword">package</span> com.example.test2</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> androidx.appcompat.app.AppCompatActivity</span><br><span class="line"><span class="keyword">import</span> android.os.Bundle</span><br><span class="line"><span class="keyword">import</span> android.widget.LinearLayout</span><br><span class="line"><span class="keyword">import</span> androidx.drawerlayout.widget.DrawerLayout</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> : <span class="type">AppCompatActivity</span></span>() &#123;</span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onCreate</span><span class="params">(savedInstanceState: <span class="type">Bundle</span>?)</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState)</span><br><span class="line">        setContentView(R.layout.activity_main)</span><br><span class="line">        <span class="keyword">val</span> m :DrawerLayout = findViewById(R.id.drawer)</span><br><span class="line">        m.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>一个简单的侧边栏就完成了</p>
+</li>
+</ol>
+<h2 id="Recyclerview的用法"><a href="#Recyclerview的用法" class="headerlink" title="Recyclerview的用法"></a>Recyclerview的用法</h2><h4 id="adapter的设计"><a href="#adapter的设计" class="headerlink" title="adapter的设计"></a>adapter的设计</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//recyclerview需要对应的adapter为recyclerview来提供数据及绑定视图</span></span><br><span class="line"><span class="keyword">package</span> com.example.android</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">bookadapter</span></span>(<span class="keyword">val</span> bookList: List&lt;book&gt;, <span class="keyword">val</span> Activity: Activity,<span class="keyword">var</span> username:String) :</span><br><span class="line">	<span class="comment">//bookadapter 继承于Recyclerview.Adapter</span></span><br><span class="line">    RecyclerView.Adapter&lt;bookadapter.ViewHolder&gt;() &#123;</span><br><span class="line">    <span class="comment">//Defind a viewHolder to match the views in item view </span></span><br><span class="line">    <span class="keyword">inner</span> <span class="class"><span class="keyword">class</span> <span class="title">ViewHolder</span></span>(view: View) : RecyclerView.ViewHolder(view) &#123;</span><br><span class="line">        <span class="comment">//use the function &quot;findviewByid&quot; to find the name of view</span></span><br><span class="line">        <span class="keyword">val</span> book_img: ImageView = view.findViewById(R.id.book_img)</span><br><span class="line">        <span class="keyword">val</span> book_name: TextView = view.findViewById(R.id.book_name)</span><br><span class="line">        <span class="keyword">val</span> book_auther: TextView = view.findViewById(R.id.book_author)</span><br><span class="line">        <span class="keyword">val</span> text: TextView = view.findViewById(R.id.text)</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="comment">//The create function is used to match the item view </span></span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onCreateViewHolder</span><span class="params">(parent: <span class="type">ViewGroup</span>, viewType: <span class="type">Int</span>)</span></span>: bookadapter.ViewHolder &#123;</span><br><span class="line">        <span class="keyword">val</span> view = LayoutInflater.from(parent.context)</span><br><span class="line">            .inflate(R.layout.book_item, parent, <span class="literal">false</span>)</span><br><span class="line">        <span class="keyword">return</span> ViewHolder(view)</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="comment">//The onBindViewHolder is used to inflater the item view, and set listen to the action for the view,such as click , loogchick</span></span><br><span class="line">    <span class="comment">//Attention:setOnLongclicklisten must return &quot;true&quot; in kotlin</span></span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onBindViewHolder</span><span class="params">(holder: <span class="type">ViewHolder</span>, position: <span class="type">Int</span>)</span></span> &#123;</span><br><span class="line">        <span class="keyword">val</span> book = bookList[position]</span><br><span class="line">        holder.book_name.text = book.bookName</span><br><span class="line">        holder.book_auther.text = book.bookAuthor</span><br><span class="line">        holder.text.text = book.bookIntroduction</span><br><span class="line">        </span><br><span class="line">        holder.book_img.setOnLongClickListener(View.OnLongClickListener &#123;</span><br><span class="line">            <span class="keyword">val</span> layoutPosition: <span class="built_in">Int</span> = holder.layoutPosition</span><br><span class="line">            <span class="keyword">val</span> intent = Intent(Activity.baseContext, DetailActivity::<span class="keyword">class</span>.java)</span><br><span class="line">            Activity.startActivityForResult(intent, <span class="number">1</span>)</span><br><span class="line">            <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">        &#125;)</span><br><span class="line">        holder.book_img.setOnClickListener &#123; view-&gt;</span><br><span class="line">            <span class="keyword">val</span> intent =Intent(Activity.baseContext,readActivity::<span class="keyword">class</span>.java)</span><br><span class="line">            intent.putExtra(<span class="string">&quot;bookname&quot;</span>,book.bookName)</span><br><span class="line">            Activity.startActivityForResult(intent,<span class="number">1</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">        </span><br><span class="line">	<span class="comment">//Function getItemCount is used to count the number of item</span></span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">getItemCount</span><span class="params">()</span></span>: <span class="built_in">Int</span> = bookList.size</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="Activity的实现"><a href="#Activity的实现" class="headerlink" title="Activity的实现"></a>Activity的实现</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">val</span> layoutManager = LinearLayoutManager(<span class="keyword">this</span>)   </span><br><span class="line"><span class="comment">//create the layoutmanage matching the layout </span></span><br><span class="line">binding.recyclerView.layoutManager = layoutManager  <span class="comment">//recyclerview match the layoutmanger</span></span><br><span class="line"><span class="keyword">val</span> adapter = bookadapter(book_list)</span><br><span class="line">binding.recyclerView.adapter=adapter <span class="comment">//recyclerview match the adapter</span></span><br><span class="line"><span class="comment">//Attention : The binding is the view matching.</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Other-about-Recyclerview"><a href="#Other-about-Recyclerview" class="headerlink" title="Other about Recyclerview"></a>Other about Recyclerview</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//notifydatasetchanged is recyclerview&#x27;s method to refresh the data</span></span><br><span class="line"><span class="comment">// It should be used to the adapter</span></span><br><span class="line">adapter.notifyDataSetChanged()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Room"><a href="#Room" class="headerlink" title="Room"></a>Room</h2><h2 id="加载图片方式"><a href="#加载图片方式" class="headerlink" title="加载图片方式"></a>加载图片方式</h2><h4 id="Glide"><a href="#Glide" class="headerlink" title="Glide"></a>Glide</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">implementation <span class="string">&#x27;com.github.bumptech.glide:glide:4.11.0&#x27;</span></span><br><span class="line">annotationProcessor <span class="string">&#x27;com.github.bumptech.glide:compiler:4.11.0&#x27;</span></span><br><span class="line"><span class="comment">//在app/build.gradle引入依赖</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;uses-permission android:name=<span class="string">&quot;android.permission.INTERNET&quot;</span> /&gt;</span><br><span class="line"><span class="comment">//申请网络权限</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Glide.with(<span class="keyword">this</span>) <span class="comment">//指定上下文，可以是app、activity、fragment</span></span><br><span class="line">    .load(url)  <span class="comment">//网络图片地址</span></span><br><span class="line">    .into(img);  <span class="comment">//用于展示的imageView</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6850037281349173261">Android | 《看完不忘系列》之Glide - 掘金 (juejin.cn)</a></p>
+<h4 id="Picasso"><a href="#Picasso" class="headerlink" title="Picasso"></a>Picasso</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">   compile <span class="string">&#x27;com.squareup.picasso:picasso:2.5.2&#x27;</span></span><br><span class="line"><span class="comment">//添加依赖</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;uses-permission android:name=<span class="string">&quot;android.permission.INTERNET&quot;</span> /&gt;</span><br><span class="line"><span class="comment">//申请网络权限</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Picasso.with(<span class="keyword">this</span>)</span><br><span class="line">       .load(<span class="string">&quot;http://ww3.sinaimg.cn/large/610dc034jw1fasakfvqe1j20u00mhgn2.jpg&quot;</span>)</span><br><span class="line">       .into(mImageView);</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/c68a3b9ca07a">图片加载框架－Picasso最详细的使用指南 - 简书 (jianshu.com)</a></p>
+<h2 id="网络申请"><a href="#网络申请" class="headerlink" title="网络申请"></a>网络申请</h2><h2 id="ScrollView"><a href="#ScrollView" class="headerlink" title="ScrollView"></a>ScrollView</h2><h2 id="TextView"><a href="#TextView" class="headerlink" title="TextView"></a>TextView</h2><h2 id="EditText"><a href="#EditText" class="headerlink" title="EditText"></a>EditText</h2><h2 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h2><h2 id="网络解析"><a href="#网络解析" class="headerlink" title="网络解析"></a>网络解析</h2><h2 id="视图绑定"><a href="#视图绑定" class="headerlink" title="视图绑定"></a>视图绑定</h2><h4 id="findviewbyid"><a href="#findviewbyid" class="headerlink" title="findviewbyid"></a>findviewbyid</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//It use the view id to find the view</span></span><br><span class="line"><span class="keyword">var</span> text:TextView = findviewbyid(R.id.text)</span><br></pre></td></tr></table></figure>
+
+<h4 id="bind"><a href="#bind" class="headerlink" title="bind"></a>bind</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//You should import in grade</span></span><br><span class="line">viewBinding &#123;</span><br><span class="line">        enabled = <span class="literal">true</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> com.example.android.databinding.ActivityBinding</span><br><span class="line"><span class="comment">//The name is from &quot;activity_main&quot;=&gt;&quot;ActivityBinding&quot;</span></span><br><span class="line">later <span class="keyword">init</span> binding : ActivityPersonBinding</span><br><span class="line"><span class="comment">//Create the binding</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span></span>()&#123;</span><br><span class="line">    ...</span><br><span class="line">    binding=ActivityBinding.inflate(layoutInflater)</span><br><span class="line">    <span class="keyword">var</span> root:view=binding.root				</span><br><span class="line">    setContentView(rootView)				<span class="comment">//Match the root of layout</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="kotlin-android-extensions"><a href="#kotlin-android-extensions" class="headerlink" title="kotlin-android-extensions"></a>kotlin-android-extensions</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//The method is out.Don&#x27;t use it any more.</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="自定义view"><a href="#自定义view" class="headerlink" title="自定义view"></a>自定义view</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//最重要的就是onDraw方法</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="自定义viewGroup"><a href="#自定义viewGroup" class="headerlink" title="自定义viewGroup"></a>自定义viewGroup</h2><h2 id="视图封装"><a href="#视图封装" class="headerlink" title="视图封装"></a>视图封装</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//隐藏属性，仅暴露修改方法</span></span><br><span class="line"><span class="comment">//在init（）中读入封装的视图</span></span><br><span class="line">LayoutInflater.from(context).inflate(R.layout.view_five_one, <span class="keyword">this</span>, <span class="literal">true</span>)</span><br><span class="line"><span class="comment">//然后就可以对其中的view进行操作了</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Toolbar"><a href="#Toolbar" class="headerlink" title="Toolbar"></a>Toolbar</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//首先新建一个munu文件夹，然后就可以添加item</span></span><br><span class="line">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;utf-8&quot;</span>?&gt;</span><br><span class="line">&lt;menu xmlns:android=<span class="string">&quot;http://schemas.android.com/apk/res/android&quot;</span></span><br><span class="line">    xmlns:app=<span class="string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>&gt;</span><br><span class="line">    &lt;item</span><br><span class="line">        android:id=<span class="string">&quot;@+id/delete&quot;</span></span><br><span class="line">        android:icon=<span class="string">&quot;@drawable/rubbish&quot;</span></span><br><span class="line">        android:title=<span class="string">&quot;@string/delete&quot;</span></span><br><span class="line">        app:showAsAction=<span class="string">&quot;always&quot;</span>/&gt;</span><br><span class="line">    &lt;item</span><br><span class="line">        android:id=<span class="string">&quot;@+id/backup&quot;</span></span><br><span class="line">        android:icon=<span class="string">&quot;@drawable/deng&quot;</span></span><br><span class="line">        android:title=<span class="string">&quot;@string/deng&quot;</span></span><br><span class="line">        app:showAsAction=<span class="string">&quot;always&quot;</span>/&gt;</span><br><span class="line">    &lt;item</span><br><span class="line">        android:id=<span class="string">&quot;@+id/enter&quot;</span></span><br><span class="line">        android:icon=<span class="string">&quot;@drawable/enter&quot;</span></span><br><span class="line">        android:title=<span class="string">&quot;enter&quot;</span></span><br><span class="line">        app:showAsAction=<span class="string">&quot;ifRoom&quot;</span>/&gt;</span><br><span class="line"></span><br><span class="line">&lt;/menu&gt;</span><br><span class="line"><span class="comment">//在视图中引入toolbar</span></span><br><span class="line">    &lt;androidx.appcompat.widget.Toolbar</span><br><span class="line">        android:id=<span class="string">&quot;@+id/toolbar2&quot;</span></span><br><span class="line">        android:layout_width=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">        android:layout_height=<span class="string">&quot;?attr/actionBarSize&quot;</span></span><br><span class="line">        android:background=<span class="string">&quot;@color/purple_200&quot;</span></span><br><span class="line">        android:popupTheme=<span class="string">&quot;@color/black&quot;</span></span><br><span class="line">        android:theme=<span class="string">&quot;@style/Theme.AppCompat&quot;</span></span><br><span class="line">        app:layout_constraintEnd_toEndOf=<span class="string">&quot;parent&quot;</span></span><br><span class="line">        app:layout_constraintStart_toStartOf=<span class="string">&quot;parent&quot;</span></span><br><span class="line">        app:layout_constraintTop_toTopOf=<span class="string">&quot;parent&quot;</span></span><br><span class="line">        app:menu=<span class="string">&quot;@menu/toolbar&quot;</span> </span><br><span class="line"><span class="comment">//重点：app：menu引入刚刚的menu，就可以绑定menu与toolbar</span></span><br><span class="line"><span class="comment">//activity 中添加支持，就可以添加了</span></span><br><span class="line"><span class="keyword">var</span> toolbar: Toolbar =findViewById(R.id.toolbar2)</span><br><span class="line">setSupportActionBar(toolbar)</span><br><span class="line"> <span class="comment">//小技巧：一般情况下，标题栏并不会只有使用一次，所以我们会用xml单独建一个toolbar，然后用include标签引入</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//本质上就是多张图片的快速播放，所有关键在于属性，和它的设置方法，通过改平滑改变属性来到动画的效果</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//program就是setProgram方法，会将字符串第一个字符大写，加上set，然后调用view中的该函数，从0到65</span></span><br><span class="line">ObjectAnimator animator = ObjectAnimator.ofFloat(view, <span class="string">&quot;progress&quot;</span>, <span class="number">0</span>, <span class="number">65</span>);</span><br><span class="line"><span class="comment">//设置时间</span></span><br><span class="line">animator.setDuration(<span class="number">2000</span>);</span><br><span class="line"><span class="comment">//设置动画形式</span></span><br><span class="line">animator.setInterpolator(new AnticipateOvershootInterpolator());</span><br><span class="line"><span class="comment">// 执行动画</span></span><br><span class="line">animator.start();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>相关教程 <a target="_blank" rel="noopener" href="https://rengwuxian.com/ui-1-6/">HenCoder Android 自定义 View 1-6：属性动画 Property Animation（上手篇） (rengwuxian.com)</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/26/android/" data-id="cl3k3vvt700019ov48865eb0a" data-title="android" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Python-0" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/01/14/Python-0/" class="article-date">
+  <time class="dt-published" datetime="2022-01-14T14:29:32.000Z" itemprop="datePublished">2022-01-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/01/14/Python-0/">Python</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h2 id="Flask"><a href="#Flask" class="headerlink" title="Flask"></a>Flask</h2><h3 id="Api"><a href="#Api" class="headerlink" title="Api"></a>Api</h3><h3 id="Restful-标准"><a href="#Restful-标准" class="headerlink" title="Restful 标准"></a>Restful 标准</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">get -&gt; 查询语句  </span><br><span class="line">post -&gt; 添加语句</span><br><span class="line">delete -&gt; 删除语句</span><br><span class="line">update -&gt; 修改语句</span><br><span class="line">import json</span><br><span class="line">import time</span><br><span class="line">import pymysql</span><br><span class="line">from flask import Flask, abort, request, Response, jsonify</span><br></pre></td></tr></table></figure>
+
+<h2 id="MYSQL"><a href="#MYSQL" class="headerlink" title="MYSQL"></a>MYSQL</h2><h3 id="进入mysql"><a href="#进入mysql" class="headerlink" title="进入mysql"></a>进入mysql</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">import json</span><br><span class="line">import time</span><br><span class="line">import pymysql</span><br><span class="line">from flask import Flask, abort, request, Response, jsonify</span><br><span class="line">py = pymysql.connect(host=&#x27;localhost&#x27;, user=&#x27;root&#x27;, password=&#x27;351172abc2015&#x27;, port=3306, charset=&#x27;utf8&#x27;)</span><br><span class="line">cursorb = py.cursor()</span><br><span class="line">cursorb.execute(&quot;CREATE DATABASE IF NOT EXISTS schedule DEFAULT CHARACTER SET utf8&quot;)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="进入数据库schedule"><a href="#进入数据库schedule" class="headerlink" title="进入数据库schedule"></a>进入数据库schedule</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dy = pymysql.connect(host=&#x27;localhost&#x27;, user=&#x27;root&#x27;, password=&#x27;351172abc2015&#x27;, port=3306,charset=&#x27;utf8&#x27;,database=&#x27;schedule&#x27;)</span><br><span class="line">cursor = dy.cursor()</span><br><span class="line">cursor.execute(</span><br><span class="line">    &#x27;CREATE TABLE IF NOT EXISTS baseschedule (Id VARCHAR(100),Title VARCHAR(100),Text VARCHAR(100),Status VARCHAR(100),Deadline date,Begintime date);&#x27;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="线程与进程"><a href="#线程与进程" class="headerlink" title="线程与进程"></a>线程与进程</h2><h3 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h3><p>概念：计算机分配资源的最小单位</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">getpid() 获取当前进程的pid</span><br><span class="line">getppid() 获取父进程的pid</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">import multiprocessing</span><br><span class="line">import time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def sing():</span><br><span class="line">    for i in range(3):</span><br><span class="line">        print(&quot;唱歌&quot;)</span><br><span class="line">        time.sleep(0.1)</span><br><span class="line"></span><br><span class="line">def dance():</span><br><span class="line">    for i in range(3):</span><br><span class="line">       print(&quot;跳舞&quot;)</span><br><span class="line">       time.sleep(0.1)</span><br><span class="line"></span><br><span class="line">if __name__==&quot;__main__&quot;:   //主进程</span><br><span class="line">    sing_process=multiprocessing.Process(target=sing)   //创建子进程</span><br><span class="line">    dance_process=multiprocessing.Process(target=dance)</span><br><span class="line">    sing_process.start()   </span><br><span class="line">    dance_process.start()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h3><p>程序执行的最小单位，一个进程中有一个或多个线程</p>
+<p>与进程类似</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">import multiprocessing</span><br><span class="line">import time</span><br><span class="line">import threading</span><br><span class="line"></span><br><span class="line">def sing():</span><br><span class="line">    for i in range(3):</span><br><span class="line">        print(&quot;唱歌&quot;)</span><br><span class="line">        time.sleep(0.5)</span><br><span class="line"></span><br><span class="line">def dance():</span><br><span class="line">    for i in range(3):</span><br><span class="line">       print(&quot;跳舞&quot;)</span><br><span class="line">       time.sleep(0.5)</span><br><span class="line"></span><br><span class="line">if __name__==&quot;__main__&quot;:</span><br><span class="line">    sing_process=threading.Thread(target=sing)</span><br><span class="line">    dance_process=threading.Thread(target=dance)</span><br><span class="line"></span><br><span class="line">    sing_process.start()</span><br><span class="line">    dance_process.start()</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><ul>
+<li><p>进程可以利用多核，实现真正意义上的并行，资源开销大</p>
+</li>
+<li><p>线程依附于线程，是又cpu控制的，不能多核</p>
+</li>
+<li><p>传参方式，元组或字典均可，字典key要遵循函数参数名，元组只有一个时，记得逗号</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(&#x27;s&#x27;,)</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>主进程（主线程）保护</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">if __name__==&quot;__main__&quot;:</span><br><span class="line">    sing_process=multiprocessing.Process(target=sing)</span><br><span class="line">    </span><br><span class="line">    dance_process=multiprocessing.Process(target=dance)</span><br><span class="line"></span><br><span class="line">    sing_process.start()</span><br><span class="line">    dance_process.start()</span><br><span class="line">    time.sleep(1)</span><br><span class="line">    print(&quot;主进程已结束&quot;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">唱歌</span><br><span class="line">跳舞</span><br><span class="line">唱歌</span><br><span class="line">跳舞</span><br><span class="line">主进程已结束</span><br><span class="line">唱歌跳舞</span><br><span class="line">进程已结束，退出代码为 0</span><br></pre></td></tr></table></figure>
+
+<p>如果想要实现主进程退出，直接销毁子进程，修改daemon参数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if __name__==&quot;__main__&quot;:</span><br><span class="line">    dance_process=multiprocessing.Process(target=dance)</span><br><span class="line">    dance_process.daemon=True</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="文本操作"><a href="#文本操作" class="headerlink" title="文本操作"></a>文本操作</h2><h3 id="常见操作"><a href="#常见操作" class="headerlink" title="常见操作"></a>常见操作</h3><table>
+<thead>
+<tr>
+<th>1</th>
+<th>open</th>
+<th>打开文件，并且返回文件操作对象</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2</td>
+<td>read</td>
+<td>将文件内容读取到内存</td>
+</tr>
+<tr>
+<td>3</td>
+<td>write</td>
+<td>将指定内容写入文件</td>
+</tr>
+<tr>
+<td>4</td>
+<td>close</td>
+<td>关闭文件</td>
+</tr>
+</tbody></table>
+<h3 id="访问参数说明"><a href="#访问参数说明" class="headerlink" title="访问参数说明"></a>访问参数说明</h3><table>
+<thead>
+<tr>
+<th>访问方式</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>r</td>
+<td align="left">以只读方式打开文件。文件的指针将会放在文件的开头，这是默认模式。如果文件不存在，抛出异常</td>
+</tr>
+<tr>
+<td>w</td>
+<td align="left">以只写方式打开文件。如果文件存在会被覆盖。如果文件不存在，创建新文件</td>
+</tr>
+<tr>
+<td>a</td>
+<td align="left">以追加方式打开文件。如果该文件已存在，文件指针将会放在文件的末尾。如果文件不存在，创建新文件进行写入</td>
+</tr>
+<tr>
+<td>r+</td>
+<td align="left">以读写方式打开文件。文件的指针将会放在文件的开头。如果文件不存在，抛出异常</td>
+</tr>
+<tr>
+<td>w+</td>
+<td align="left">以读写方式打开文件。如果文件存在会被覆盖。如果文件不存在，创建新文件</td>
+</tr>
+<tr>
+<td>a+</td>
+<td align="left">以读写方式打开文件。如果该文件已存在，文件指针将会放在文件的结尾。如果文件不存在，创建新文件进行写入</td>
+</tr>
+</tbody></table>
+<h3 id="按行读取文件内容"><a href="#按行读取文件内容" class="headerlink" title="按行读取文件内容"></a><strong>按行读取文件内容</strong></h3><ul>
+<li>read 方法默认会把文件的 所有内容一次性读取到内存</li>
+<li>如果文件太大，对内存的占用会非常严重</li>
+</ul>
+<p>readline 方法</p>
+<ul>
+<li>readline 方法可以一次读取一行内容</li>
+<li>方法执行后，会把文件指针移动到下一行，准备再次读取</li>
+</ul>
+<p>示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># 打开文件</span><br><span class="line">file = open(&quot;read.txt&quot;)</span><br><span class="line"></span><br><span class="line">while True:</span><br><span class="line">    # 读取一行内容</span><br><span class="line">    text = file.readline()</span><br><span class="line"></span><br><span class="line">    # 判断是否读到内容</span><br><span class="line">    if not text:</span><br><span class="line">        break</span><br><span class="line"></span><br><span class="line">    # 每读取一行的末尾已经有了一个 &#x27;</span><br><span class="line">&#x27;</span><br><span class="line">    print(text, end=&quot;&quot;)</span><br><span class="line"></span><br><span class="line"># 关闭文件</span><br><span class="line">file.close()</span><br></pre></td></tr></table></figure>
+
+<h3 id="补充1：as的用法"><a href="#补充1：as的用法" class="headerlink" title="补充1：as的用法"></a>补充1：as的用法</h3><h4 id="1-with…as…"><a href="#1-with…as…" class="headerlink" title="1.with…as…"></a>1.with…as…</h4><p>第一种是和with结合使用，主要用于文件的读写操作，省去了关闭文件的麻烦。</p>
+<p>写法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">with open(&quot;文件路径&quot;,&quot;读写方式&quot;) as 赋值变量:</span><br><span class="line">    执行代码块</span><br></pre></td></tr></table></figure>
+
+<p>实例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#test.py</span><br><span class="line">with open(&quot;1.txt&quot;) as f:</span><br><span class="line">    print f.read()</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2-导入模块起别名"><a href="#2-导入模块起别名" class="headerlink" title="2.导入模块起别名"></a>2.导入模块起别名</h4><p>第二种是导入模块是对模块进行重命名，也就是给模块起一个别名。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import traceback as a</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-except结合使用"><a href="#3-except结合使用" class="headerlink" title="3.except结合使用"></a>3.except结合使用</h4><p>第三种是和except组合使用，将捕获到的异常对象赋值给e。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">except Exception as e:</span><br><span class="line">    print &quot;e=&quot;,e</span><br><span class="line">    a.print_exc()</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/14/Python-0/" data-id="cl3k3vvt000009ov48kopb4h8" data-title="Python" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/05/24/php/">PHP</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/24/calculate-md/">算法</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/24/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/11/github/">github</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/08/mysql/">mysql</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>android | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="数据库相关概念主键 主关键字（主键，primary key）是被挑选出来，作表的行的惟一标识的候选关键字。一个表只有一个主关键字。主关键字又可以称为主键。主键可以由一个字段，也可以由多个字段组成，分别成为单字段主键或多字段主键。  主键具有唯一性  复合主键是指由多个字段（列）组成的主键   SharedPreferences储存 将数据保存至SharedPreferences: 1234567S">
+<meta property="og:type" content="article">
+<meta property="og:title" content="android">
+<meta property="og:url" content="http://example.com/2022/01/26/android/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="数据库相关概念主键 主关键字（主键，primary key）是被挑选出来，作表的行的惟一标识的候选关键字。一个表只有一个主关键字。主关键字又可以称为主键。主键可以由一个字段，也可以由多个字段组成，分别成为单字段主键或多字段主键。  主键具有唯一性  复合主键是指由多个字段（列）组成的主键   SharedPreferences储存 将数据保存至SharedPreferences: 1234567S">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-01-25T17:11:21.000Z">
+<meta property="article:modified_time" content="2022-04-08T10:30:13.943Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-android" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/01/26/android/" class="article-date">
+  <time class="dt-published" datetime="2022-01-25T17:11:21.000Z" itemprop="datePublished">2022-01-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      android
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><h3 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h3><h4 id="主键"><a href="#主键" class="headerlink" title="主键"></a>主键</h4><ul>
+<li><p>主关键字（主键，primary key）是被挑选出来，作表的行的惟一标识的候选关键字。一个表只有一个主关键字。主关键字又可以称为主键。主键可以由一个字段，也可以由多个字段组成，分别成为单字段主键或多字段主键。</p>
+</li>
+<li><p>主键具有唯一性</p>
+</li>
+<li><p>复合主键是指由多个字段（列）组成的主键</p>
+</li>
+</ul>
+<h3 id="SharedPreferences储存"><a href="#SharedPreferences储存" class="headerlink" title="SharedPreferences储存"></a>SharedPreferences储存</h3><ul>
+<li><p>将数据保存至SharedPreferences:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">SharedPreferences preferences=getSharedPreferences(&quot;user&quot;,Context.MODE_PRIVATE);</span><br><span class="line">Editor editor=preferences.edit();</span><br><span class="line">String name=&quot;xixi&quot;;</span><br><span class="line">String age=&quot;22&quot;;</span><br><span class="line">editor.putString(&quot;name&quot;, name);</span><br><span class="line">editor.putString(&quot;age&quot;, age);</span><br><span class="line">editor.commit();//editor.apply();</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">commit（）和apply（）之间的区别</span><br><span class="line"></span><br><span class="line">当我们使用SharedPreference时，我们可能会对这两个术语感到困惑。 基本上它们可能是相同的，所以让我们澄清commit（）和apply（）的区别。</span><br><span class="line"></span><br><span class="line">1.返回值：</span><br><span class="line"></span><br><span class="line">apply()提交而不返回指示成功或失败的布尔值。 如果保存工作， commit( ）返回true，否则返回false。</span><br><span class="line"></span><br><span class="line">2.速度：</span><br><span class="line">apply()更快。 commit()比较慢。</span><br><span class="line"></span><br><span class="line">3.异步与同步：</span><br><span class="line">apply() ：异步commit() ：同步</span><br><span class="line"></span><br><span class="line">4.原子：</span><br><span class="line">apply() ：atomic commit() ：atomic</span><br><span class="line"></span><br><span class="line">5.错误通知：</span><br><span class="line">apply() ：没有commit() ：是的</span><br></pre></td></tr></table></figure>
+
+
+<p>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/zhang31jian/article/details/23258065">https://blog.csdn.net/zhang31jian/article/details/23258065</a></p>
+</li>
+<li><p>从SharedPreferences获取数据:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SharedPreferences preferences=getSharedPreferences(&quot;user&quot;, Context.MODE_PRIVATE);</span><br><span class="line">String name=preferences.getString(&quot;name&quot;, &quot;defaultname&quot;); //格式</span><br><span class="line">String age=preferences.getString(&quot;age&quot;, &quot;0&quot;); //实例</span><br></pre></td></tr></table></figure>
+</li>
+<li></li>
+</ul>
+<h2 id="侧边栏空间的实现"><a href="#侧边栏空间的实现" class="headerlink" title="侧边栏空间的实现"></a>侧边栏空间的实现</h2><ol>
+<li><p>引入抽屉控件</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">#layout_main.xml内容</span><br><span class="line"></span><br><span class="line">&lt;androidx.drawerlayout.widget.DrawerLayout</span><br><span class="line">    xmlns:android=<span class="string">&quot;http://schemas.android.com/apk/res/android&quot;</span></span><br><span class="line">    android:id=<span class="string">&quot;@+id/drawer&quot;</span></span><br><span class="line">    android:layout_width=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">    android:layout_height=<span class="string">&quot;match_parent&quot;</span> &gt;</span><br><span class="line"></span><br><span class="line">    &lt;LinearLayout</span><br><span class="line">        android:layout_width=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">        android:layout_height=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">        android:orientation=<span class="string">&quot;vertical&quot;</span> &gt;</span><br><span class="line"></span><br><span class="line">        &lt;!--这里是主界面，content，该写什么写什么，加载的时候界面上只会显示这里面的内容--&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/LinearLayout&gt;</span><br><span class="line"></span><br><span class="line">    &lt;LinearLayout</span><br><span class="line">        android:id=<span class="string">&quot;@+id/drawer_1&quot;</span></span><br><span class="line">        android:layout_width=<span class="string">&quot;280dp&quot;</span></span><br><span class="line">        android:layout_height=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">        android:layout_gravity=<span class="string">&quot;start&quot;</span></span><br><span class="line">        android:orientation=<span class="string">&quot;vertical&quot;</span></span><br><span class="line">        android:background=<span class="string">&quot;#003671&quot;</span>&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;!--这里是左边抽屉，加载的时候不会显示，要通过手势侧边滑动或者代码控制才会显示--&gt;</span><br><span class="line">        &lt;!--侧边栏的大小由宽度layout_width控制--&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/LinearLayout&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;/androidx.drawerlayout.widget.DrawerLayout&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//先要通过findViewById获得这个侧边栏控件mDrawerLayout，然后可以通过事件监听打开和关闭抽屉</span><br><span class="line"></span><br><span class="line">//屏蔽手势操作，解锁参数DrawerLayout.LOCK_MODE_UNLOCKED</span><br><span class="line">mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);</span><br><span class="line">//如果只想屏蔽其中一边：</span><br><span class="line">//mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED,Gravity.LEFT);/</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//先要通过findViewById获得这个侧边栏控件mDrawerLayout，然后可以通过事件监听打开和关闭抽屉</span><br><span class="line">//打开抽屉</span><br><span class="line">mDrawerLayout.openDrawer(Gravity.LEFT);//同理，打开右边就是Gravity.RIGHT</span><br><span class="line">//关闭抽屉</span><br><span class="line">mDrawerLayout.closeDrawers();//关闭所有，其实两边也不会同时出来，所以关闭所有即可关闭任意一边</span><br><span class="line">//当然你也可以严谨一点，非要关闭一边</span><br><span class="line">//closeDrawer(Gravity.LEFT);//or Gravity.RIGHT</span><br></pre></td></tr></table></figure>
+
+<p>注意：需要先用findviewbyid()找到drawerlayout控件，即上文中的mDrawerlayout，和下文的m</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Mainactivity的内容</span></span><br><span class="line"><span class="keyword">package</span> com.example.test2</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> androidx.appcompat.app.AppCompatActivity</span><br><span class="line"><span class="keyword">import</span> android.os.Bundle</span><br><span class="line"><span class="keyword">import</span> android.widget.LinearLayout</span><br><span class="line"><span class="keyword">import</span> androidx.drawerlayout.widget.DrawerLayout</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> : <span class="type">AppCompatActivity</span></span>() &#123;</span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onCreate</span><span class="params">(savedInstanceState: <span class="type">Bundle</span>?)</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState)</span><br><span class="line">        setContentView(R.layout.activity_main)</span><br><span class="line">        <span class="keyword">val</span> m :DrawerLayout = findViewById(R.id.drawer)</span><br><span class="line">        m.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>一个简单的侧边栏就完成了</p>
+</li>
+</ol>
+<h2 id="Recyclerview的用法"><a href="#Recyclerview的用法" class="headerlink" title="Recyclerview的用法"></a>Recyclerview的用法</h2><h4 id="adapter的设计"><a href="#adapter的设计" class="headerlink" title="adapter的设计"></a>adapter的设计</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//recyclerview需要对应的adapter为recyclerview来提供数据及绑定视图</span></span><br><span class="line"><span class="keyword">package</span> com.example.android</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">bookadapter</span></span>(<span class="keyword">val</span> bookList: List&lt;book&gt;, <span class="keyword">val</span> Activity: Activity,<span class="keyword">var</span> username:String) :</span><br><span class="line">	<span class="comment">//bookadapter 继承于Recyclerview.Adapter</span></span><br><span class="line">    RecyclerView.Adapter&lt;bookadapter.ViewHolder&gt;() &#123;</span><br><span class="line">    <span class="comment">//Defind a viewHolder to match the views in item view </span></span><br><span class="line">    <span class="keyword">inner</span> <span class="class"><span class="keyword">class</span> <span class="title">ViewHolder</span></span>(view: View) : RecyclerView.ViewHolder(view) &#123;</span><br><span class="line">        <span class="comment">//use the function &quot;findviewByid&quot; to find the name of view</span></span><br><span class="line">        <span class="keyword">val</span> book_img: ImageView = view.findViewById(R.id.book_img)</span><br><span class="line">        <span class="keyword">val</span> book_name: TextView = view.findViewById(R.id.book_name)</span><br><span class="line">        <span class="keyword">val</span> book_auther: TextView = view.findViewById(R.id.book_author)</span><br><span class="line">        <span class="keyword">val</span> text: TextView = view.findViewById(R.id.text)</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="comment">//The create function is used to match the item view </span></span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onCreateViewHolder</span><span class="params">(parent: <span class="type">ViewGroup</span>, viewType: <span class="type">Int</span>)</span></span>: bookadapter.ViewHolder &#123;</span><br><span class="line">        <span class="keyword">val</span> view = LayoutInflater.from(parent.context)</span><br><span class="line">            .inflate(R.layout.book_item, parent, <span class="literal">false</span>)</span><br><span class="line">        <span class="keyword">return</span> ViewHolder(view)</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="comment">//The onBindViewHolder is used to inflater the item view, and set listen to the action for the view,such as click , loogchick</span></span><br><span class="line">    <span class="comment">//Attention:setOnLongclicklisten must return &quot;true&quot; in kotlin</span></span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onBindViewHolder</span><span class="params">(holder: <span class="type">ViewHolder</span>, position: <span class="type">Int</span>)</span></span> &#123;</span><br><span class="line">        <span class="keyword">val</span> book = bookList[position]</span><br><span class="line">        holder.book_name.text = book.bookName</span><br><span class="line">        holder.book_auther.text = book.bookAuthor</span><br><span class="line">        holder.text.text = book.bookIntroduction</span><br><span class="line">        </span><br><span class="line">        holder.book_img.setOnLongClickListener(View.OnLongClickListener &#123;</span><br><span class="line">            <span class="keyword">val</span> layoutPosition: <span class="built_in">Int</span> = holder.layoutPosition</span><br><span class="line">            <span class="keyword">val</span> intent = Intent(Activity.baseContext, DetailActivity::<span class="keyword">class</span>.java)</span><br><span class="line">            Activity.startActivityForResult(intent, <span class="number">1</span>)</span><br><span class="line">            <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">        &#125;)</span><br><span class="line">        holder.book_img.setOnClickListener &#123; view-&gt;</span><br><span class="line">            <span class="keyword">val</span> intent =Intent(Activity.baseContext,readActivity::<span class="keyword">class</span>.java)</span><br><span class="line">            intent.putExtra(<span class="string">&quot;bookname&quot;</span>,book.bookName)</span><br><span class="line">            Activity.startActivityForResult(intent,<span class="number">1</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">        </span><br><span class="line">	<span class="comment">//Function getItemCount is used to count the number of item</span></span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">getItemCount</span><span class="params">()</span></span>: <span class="built_in">Int</span> = bookList.size</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="Activity的实现"><a href="#Activity的实现" class="headerlink" title="Activity的实现"></a>Activity的实现</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">val</span> layoutManager = LinearLayoutManager(<span class="keyword">this</span>)   </span><br><span class="line"><span class="comment">//create the layoutmanage matching the layout </span></span><br><span class="line">binding.recyclerView.layoutManager = layoutManager  <span class="comment">//recyclerview match the layoutmanger</span></span><br><span class="line"><span class="keyword">val</span> adapter = bookadapter(book_list)</span><br><span class="line">binding.recyclerView.adapter=adapter <span class="comment">//recyclerview match the adapter</span></span><br><span class="line"><span class="comment">//Attention : The binding is the view matching.</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Other-about-Recyclerview"><a href="#Other-about-Recyclerview" class="headerlink" title="Other about Recyclerview"></a>Other about Recyclerview</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//notifydatasetchanged is recyclerview&#x27;s method to refresh the data</span></span><br><span class="line"><span class="comment">// It should be used to the adapter</span></span><br><span class="line">adapter.notifyDataSetChanged()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Room"><a href="#Room" class="headerlink" title="Room"></a>Room</h2><h2 id="加载图片方式"><a href="#加载图片方式" class="headerlink" title="加载图片方式"></a>加载图片方式</h2><h4 id="Glide"><a href="#Glide" class="headerlink" title="Glide"></a>Glide</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">implementation <span class="string">&#x27;com.github.bumptech.glide:glide:4.11.0&#x27;</span></span><br><span class="line">annotationProcessor <span class="string">&#x27;com.github.bumptech.glide:compiler:4.11.0&#x27;</span></span><br><span class="line"><span class="comment">//在app/build.gradle引入依赖</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;uses-permission android:name=<span class="string">&quot;android.permission.INTERNET&quot;</span> /&gt;</span><br><span class="line"><span class="comment">//申请网络权限</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Glide.with(<span class="keyword">this</span>) <span class="comment">//指定上下文，可以是app、activity、fragment</span></span><br><span class="line">    .load(url)  <span class="comment">//网络图片地址</span></span><br><span class="line">    .into(img);  <span class="comment">//用于展示的imageView</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6850037281349173261">Android | 《看完不忘系列》之Glide - 掘金 (juejin.cn)</a></p>
+<h4 id="Picasso"><a href="#Picasso" class="headerlink" title="Picasso"></a>Picasso</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">   compile <span class="string">&#x27;com.squareup.picasso:picasso:2.5.2&#x27;</span></span><br><span class="line"><span class="comment">//添加依赖</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;uses-permission android:name=<span class="string">&quot;android.permission.INTERNET&quot;</span> /&gt;</span><br><span class="line"><span class="comment">//申请网络权限</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Picasso.with(<span class="keyword">this</span>)</span><br><span class="line">       .load(<span class="string">&quot;http://ww3.sinaimg.cn/large/610dc034jw1fasakfvqe1j20u00mhgn2.jpg&quot;</span>)</span><br><span class="line">       .into(mImageView);</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/c68a3b9ca07a">图片加载框架－Picasso最详细的使用指南 - 简书 (jianshu.com)</a></p>
+<h2 id="网络申请"><a href="#网络申请" class="headerlink" title="网络申请"></a>网络申请</h2><h2 id="ScrollView"><a href="#ScrollView" class="headerlink" title="ScrollView"></a>ScrollView</h2><h2 id="TextView"><a href="#TextView" class="headerlink" title="TextView"></a>TextView</h2><h2 id="EditText"><a href="#EditText" class="headerlink" title="EditText"></a>EditText</h2><h2 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h2><h2 id="网络解析"><a href="#网络解析" class="headerlink" title="网络解析"></a>网络解析</h2><h2 id="视图绑定"><a href="#视图绑定" class="headerlink" title="视图绑定"></a>视图绑定</h2><h4 id="findviewbyid"><a href="#findviewbyid" class="headerlink" title="findviewbyid"></a>findviewbyid</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//It use the view id to find the view</span></span><br><span class="line"><span class="keyword">var</span> text:TextView = findviewbyid(R.id.text)</span><br></pre></td></tr></table></figure>
+
+<h4 id="bind"><a href="#bind" class="headerlink" title="bind"></a>bind</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//You should import in grade</span></span><br><span class="line">viewBinding &#123;</span><br><span class="line">        enabled = <span class="literal">true</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> com.example.android.databinding.ActivityBinding</span><br><span class="line"><span class="comment">//The name is from &quot;activity_main&quot;=&gt;&quot;ActivityBinding&quot;</span></span><br><span class="line">later <span class="keyword">init</span> binding : ActivityPersonBinding</span><br><span class="line"><span class="comment">//Create the binding</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span></span>()&#123;</span><br><span class="line">    ...</span><br><span class="line">    binding=ActivityBinding.inflate(layoutInflater)</span><br><span class="line">    <span class="keyword">var</span> root:view=binding.root				</span><br><span class="line">    setContentView(rootView)				<span class="comment">//Match the root of layout</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="kotlin-android-extensions"><a href="#kotlin-android-extensions" class="headerlink" title="kotlin-android-extensions"></a>kotlin-android-extensions</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//The method is out.Don&#x27;t use it any more.</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="自定义view"><a href="#自定义view" class="headerlink" title="自定义view"></a>自定义view</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//最重要的就是onDraw方法</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="自定义viewGroup"><a href="#自定义viewGroup" class="headerlink" title="自定义viewGroup"></a>自定义viewGroup</h2><h2 id="视图封装"><a href="#视图封装" class="headerlink" title="视图封装"></a>视图封装</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//隐藏属性，仅暴露修改方法</span></span><br><span class="line"><span class="comment">//在init（）中读入封装的视图</span></span><br><span class="line">LayoutInflater.from(context).inflate(R.layout.view_five_one, <span class="keyword">this</span>, <span class="literal">true</span>)</span><br><span class="line"><span class="comment">//然后就可以对其中的view进行操作了</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Toolbar"><a href="#Toolbar" class="headerlink" title="Toolbar"></a>Toolbar</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//首先新建一个munu文件夹，然后就可以添加item</span></span><br><span class="line">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;utf-8&quot;</span>?&gt;</span><br><span class="line">&lt;menu xmlns:android=<span class="string">&quot;http://schemas.android.com/apk/res/android&quot;</span></span><br><span class="line">    xmlns:app=<span class="string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>&gt;</span><br><span class="line">    &lt;item</span><br><span class="line">        android:id=<span class="string">&quot;@+id/delete&quot;</span></span><br><span class="line">        android:icon=<span class="string">&quot;@drawable/rubbish&quot;</span></span><br><span class="line">        android:title=<span class="string">&quot;@string/delete&quot;</span></span><br><span class="line">        app:showAsAction=<span class="string">&quot;always&quot;</span>/&gt;</span><br><span class="line">    &lt;item</span><br><span class="line">        android:id=<span class="string">&quot;@+id/backup&quot;</span></span><br><span class="line">        android:icon=<span class="string">&quot;@drawable/deng&quot;</span></span><br><span class="line">        android:title=<span class="string">&quot;@string/deng&quot;</span></span><br><span class="line">        app:showAsAction=<span class="string">&quot;always&quot;</span>/&gt;</span><br><span class="line">    &lt;item</span><br><span class="line">        android:id=<span class="string">&quot;@+id/enter&quot;</span></span><br><span class="line">        android:icon=<span class="string">&quot;@drawable/enter&quot;</span></span><br><span class="line">        android:title=<span class="string">&quot;enter&quot;</span></span><br><span class="line">        app:showAsAction=<span class="string">&quot;ifRoom&quot;</span>/&gt;</span><br><span class="line"></span><br><span class="line">&lt;/menu&gt;</span><br><span class="line"><span class="comment">//在视图中引入toolbar</span></span><br><span class="line">    &lt;androidx.appcompat.widget.Toolbar</span><br><span class="line">        android:id=<span class="string">&quot;@+id/toolbar2&quot;</span></span><br><span class="line">        android:layout_width=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">        android:layout_height=<span class="string">&quot;?attr/actionBarSize&quot;</span></span><br><span class="line">        android:background=<span class="string">&quot;@color/purple_200&quot;</span></span><br><span class="line">        android:popupTheme=<span class="string">&quot;@color/black&quot;</span></span><br><span class="line">        android:theme=<span class="string">&quot;@style/Theme.AppCompat&quot;</span></span><br><span class="line">        app:layout_constraintEnd_toEndOf=<span class="string">&quot;parent&quot;</span></span><br><span class="line">        app:layout_constraintStart_toStartOf=<span class="string">&quot;parent&quot;</span></span><br><span class="line">        app:layout_constraintTop_toTopOf=<span class="string">&quot;parent&quot;</span></span><br><span class="line">        app:menu=<span class="string">&quot;@menu/toolbar&quot;</span> </span><br><span class="line"><span class="comment">//重点：app：menu引入刚刚的menu，就可以绑定menu与toolbar</span></span><br><span class="line"><span class="comment">//activity 中添加支持，就可以添加了</span></span><br><span class="line"><span class="keyword">var</span> toolbar: Toolbar =findViewById(R.id.toolbar2)</span><br><span class="line">setSupportActionBar(toolbar)</span><br><span class="line"> <span class="comment">//小技巧：一般情况下，标题栏并不会只有使用一次，所以我们会用xml单独建一个toolbar，然后用include标签引入</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//本质上就是多张图片的快速播放，所有关键在于属性，和它的设置方法，通过改平滑改变属性来到动画的效果</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//program就是setProgram方法，会将字符串第一个字符大写，加上set，然后调用view中的该函数，从0到65</span></span><br><span class="line">ObjectAnimator animator = ObjectAnimator.ofFloat(view, <span class="string">&quot;progress&quot;</span>, <span class="number">0</span>, <span class="number">65</span>);</span><br><span class="line"><span class="comment">//设置时间</span></span><br><span class="line">animator.setDuration(<span class="number">2000</span>);</span><br><span class="line"><span class="comment">//设置动画形式</span></span><br><span class="line">animator.setInterpolator(new AnticipateOvershootInterpolator());</span><br><span class="line"><span class="comment">// 执行动画</span></span><br><span class="line">animator.start();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>相关教程 <a target="_blank" rel="noopener" href="https://rengwuxian.com/ui-1-6/">HenCoder Android 自定义 View 1-6：属性动画 Property Animation（上手篇） (rengwuxian.com)</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/26/android/" data-id="cl3k3vvt700019ov48865eb0a" data-title="android" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/01/26/study-schedule/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          STUDY
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/01/14/Python-0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Python</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/05/24/php/">PHP</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/24/calculate-md/">算法</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/24/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/11/github/">github</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/08/mysql/">mysql</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>mysql | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="MysqlMysqlmysql安装（安装版） mysql默认端口：3306 123456789101112131415161718192021* mysql 安装默认账号： root* %mysql%&#x2F;my.ini ， mysql 数据库的配置文件* 端口号： port&#x3D;3306* mysql 默认字符集： default-character-set&#x3D;utf8* mysql数据库目录：datadi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mysql">
+<meta property="og:url" content="http://example.com/2022/03/08/mysql/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="MysqlMysqlmysql安装（安装版） mysql默认端口：3306 123456789101112131415161718192021* mysql 安装默认账号： root* %mysql%&#x2F;my.ini ， mysql 数据库的配置文件* 端口号： port&#x3D;3306* mysql 默认字符集： default-character-set&#x3D;utf8* mysql数据库目录：datadi">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-03-08T09:10:18.000Z">
+<meta property="article:modified_time" content="2022-03-30T00:49:38.898Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-mysql" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/08/mysql/" class="article-date">
+  <time class="dt-published" datetime="2022-03-08T09:10:18.000Z" itemprop="datePublished">2022-03-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      mysql
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Mysql"><a href="#Mysql" class="headerlink" title="Mysql"></a>Mysql</h1><h3 id="Mysql-1"><a href="#Mysql-1" class="headerlink" title="Mysql"></a>Mysql</h3><h4 id="mysql安装（安装版）"><a href="#mysql安装（安装版）" class="headerlink" title="mysql安装（安装版）"></a>mysql安装（安装版）</h4><ul>
+<li><p>mysql默认端口：3306</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">* mysql 安装默认账号： root</span><br><span class="line">* %mysql%/my.ini ， mysql 数据库的配置文件</span><br><span class="line">* 端口号： port=3306</span><br><span class="line">* mysql 默认字符集： default-character-set=utf8</span><br><span class="line">* mysql数据库目录：datadir=&quot;C:/java/MySQL/MySQL Server 5.5/Data/&quot;</span><br><span class="line">    </span><br><span class="line">* mysql安装默认账号：root</span><br><span class="line">    </span><br><span class="line">* %mysql%/my.ini，mysql数据库的配置文件</span><br><span class="line">    </span><br><span class="line">* 端口号：port=3306</span><br><span class="line">    </span><br><span class="line">* mysql默认字符集：default-character-set=utf8</span><br><span class="line">    </span><br><span class="line">* mysql 数据库目录： datadir=&quot;C:/java/MySQL/MySQL Server  5.5/Data/&quot;</span><br><span class="line">* mysql 安装默认账号： root</span><br><span class="line">* %mysql%/my.ini ， mysql 数据库的配置文件</span><br><span class="line">* 端口号： port=3306</span><br><span class="line">* mysql默认字符集：default-character-set=utf8</span><br><span class="line">    </span><br><span class="line">* mysql数据库目录：datadir=&quot;C:/java/MySQL/MySQL Server 5.5/Data/&quot;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="mysql启动"><a href="#mysql启动" class="headerlink" title="mysql启动"></a>mysql启动</h4><ul>
+<li><p>&#96;&#96;&#96;</p>
+<ul>
+<li><p>windows 服务中：启动 &#x2F; 停止</p>
+</li>
+<li><p>cmd &gt; mysqld –console<br>mysql 登录</p>
+</li>
+<li><p>格式 1 ： cmd &gt; mysql -h 主机域名 &#x2F;IP  -u 账号   -p[ 密码 ]</p>
+</li>
+<li><p>格式 2 ： cmd &gt; mysql –host&#x3D; 主机域名 &#x2F;IP  –user&#x3D; 账号  –password[&#x3D; 密码 ]</p>
+</li>
+<li><p>mysql 帮助： cmd &gt; mysql -?</p>
+</li>
+<li><p>访问指定主机的 mysql 服务器：  cmd &gt; mysql -h192.168.1.204 -uroot -p1234<br>mysql 绿化版</p>
+</li>
+<li><p>解压，复制 ini 文件 my-small.ini ，将名称修改为 my.ini</p>
+</li>
+<li><p>配置系统变量 path</p>
+</li>
+<li><p>注册与移除</p>
+</li>
+<li><p>将 mysql 注册为系统服务： cmd &gt; C:\java\mysql-5.5.27-win32\bin&gt;mysqld –install</p>
+</li>
+<li><p>注意：必须将当前目录切换为%mysql%&#x2F;bin</p>
+</li>
+<li><p>将mysql移除系统服务：cmd &gt; C:\java\mysql-5.5.27-win32\bin&gt;mysqld –remove</p>
+</li>
+</ul>
+<h4 id="启动与停止-绿化版"><a href="#启动与停止-绿化版" class="headerlink" title="启动与停止(绿化版)"></a>启动与停止(绿化版)</h4><ul>
+<li><p>使用 windows 命令启动： cmd &gt; net start mysql</p>
+</li>
+<li><p>注意： win7 ，启动不能成功，需要以 “ 管理员身份 ” 运行 cmd</p>
+</li>
+<li><p>使用 windows 命令停止： cmd &gt; net stop mysql</p>
+</li>
+<li><p>绿化版root账号没有密码</p>
+</li>
+<li><p>cmd  &gt; mysql -uroot -p   回车两次</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#### 常用的显示命令</span><br><span class="line"></span><br><span class="line"> * ```</span><br><span class="line">   *  显示当前数据库服务器中的数据库列表， mysql&gt; show databases;</span><br><span class="line">   *  注意： %mysql%/data/mysql 数据库， mysql 的核心数据库，数据库的个数，表的个数，用户等</span><br><span class="line">   *  使用数据库： mysql&gt; use  库名 ;</span><br><span class="line">   *  显示数据库中的数据表： mysql&gt;show tables;</span><br><span class="line">   *  显示当前所使用的数据库名称：  mysql&gt; select database();   ，结果为 null 说明没有选择数据库</span><br><span class="line">   *  显示当前数据库的状态 ：  mysql&gt; status;</span><br><span class="line">   *  显示当前数据库中某表的表结构 （ DESCRIBE  ）：  mysql&gt; desc user;</span><br><span class="line">   *  显示所支持的字符集：  show character set;</span><br><span class="line">   *  显示系统变量：mysql&gt; show variables;</span><br><span class="line">     </span><br><span class="line">   *  显示执行内容系统变量，显示与字符集有关的系统变量：mysql&gt; show variables like &#x27;%char%&#x27;;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h4 id="mysql账号管理"><a href="#mysql账号管理" class="headerlink" title="mysql账号管理"></a>mysql账号管理</h4><ul>
+<li>&#96;&#96;&#96;<ul>
+<li><p>查询账号： mysql &gt; select * from user;   或   mysql &gt; select host,user,password from user;</p>
+</li>
+<li><p>创建账号： mysql &gt; create user  账号   [ identified by ‘ 密码 ‘]</p>
+</li>
+<li><p>账号：</p>
+</li>
+<li><p>格式： ‘user‘@’host’</p>
+</li>
+<li><p>默认账号， ‘ 账号 ‘ ，表示创建一个账号， host 字段为 % ， % 表示允许所有人访问</p>
+</li>
+<li><p>例如： ‘itcast‘@’192.168.1.100’, 只允许指定 IP 的主机进行访问</p>
+</li>
+<li><p>修改密码： set password for  账号  &#x3D; password(‘ 密码 ‘);</p>
+</li>
+<li><p>删除账号： drop user  账号 ;</p>
+</li>
+<li><p>授权： grant  权限  on  数据库 . 表  to  账号  [with grant option]</p>
+</li>
+<li><p>权限： all 表示所有权限</p>
+</li>
+<li><p>数据库.表 ： <em>.</em> 所有数据库的所有表</p>
+</li>
+<li><p>with grant option，当前账号是否具有将自己的权限授予其他人</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h4 id="root账号密码丢失"><a href="#root账号密码丢失" class="headerlink" title="root账号密码丢失"></a>root账号密码丢失</h4><ul>
+<li>&#96;&#96;&#96;<ul>
+<li><p>使用跳过权限验证启动mysql服务：cmd &gt; mysqld –console –skip-grant-tables</p>
+</li>
+<li><p>修改密码，只能使用update语句</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">mysql&gt; update user set password = password(&#x27;123456&#x27;) where host=&#x27;localhost&#x27; and user=&#x27;root&#x27;;</span><br><span class="line"></span><br><span class="line">#### mysql异常</span><br><span class="line"></span><br><span class="line"> * ```</span><br><span class="line">   *  密码不正确</span><br><span class="line">   *  ERROR 1045 (28000): Access denied for user &#x27;root&#x27;@&#x27;localhost&#x27; (using password: YES)</span><br><span class="line">   *  没有使用数据库</span><br><span class="line">   *  ERROR 1046 (3D000): No database selected</span><br><span class="line">   *  没有权限</span><br><span class="line">   *  ERROR 1044 (42000): Access denied for user &#x27;itcast&#x27;@&#x27;%&#x27; to database &#x27;mysql&#x27;</span><br><span class="line">   *  如果 mysql 启动中，将移除服务时</span><br><span class="line">   *  Failed to remove the service because the service is running</span><br><span class="line">   *  Stop the service and try again</span><br><span class="line">   *  使用 net 命令启动错误</span><br><span class="line">   *  C:\Documents and Settings\Administrator&gt;net start mysql</span><br><span class="line">   *  发生系统错误  3 。</span><br><span class="line">   *  系统找不到指定的路径。</span><br><span class="line">   *  mysql 服务器没有启动</span><br><span class="line">   *  ERROR 2003 (HY000): Can&#x27;t connect to MySQL server on &#x27;localhost&#x27; (10061)</span><br><span class="line">   *  表必须具有一个字段</span><br><span class="line">     </span><br><span class="line">   *  ERROR 1113 (42000): A table must have at least 1 column</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h4 id="中文乱码"><a href="#中文乱码" class="headerlink" title="中文乱码"></a>中文乱码</h4><ul>
+<li><p>&#96;&#96;&#96;</p>
+<ul>
+<li><p>在 my.ini 文件没有设置默认编码</p>
+</li>
+<li><p>在创建数据库时，指定数据的编码</p>
+</li>
+<li><p>表的创建，默认使用数据库的编码</p>
+</li>
+<li><p>character_set_database   | utf8</p>
+</li>
+<li><p>在 my.ini 文件设置默认编码</p>
+</li>
+<li><p>查询当前数据库设置的编码： mysql &gt; show variables like ‘%char%’;</p>
+</li>
+<li><p>结果：<br>character_set_client     | gbk  – 客户端<br> character_set_connection | gbk  – 链接<br> character_set_results    | gbk  – 返回结果</p>
+</li>
+<li><p>如果 3 项为 UTF-8 ，使用 cmd( 默认编码 GBK) 进行操作，将出现乱码</p>
+</li>
+<li><p>解决办法</p>
+</li>
+<li><p>设置编码：set names gbk;</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">#### 添加主键:</span><br><span class="line"></span><br><span class="line"> 1. ```</span><br><span class="line">    </span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="2">
+<li><p>创建表，定义字段时，给字段添加约束<br>create table  a(<br> id varchar(32) primary key,<br>);</p>
+</li>
+<li><p>创建表，定义字段之后，在约束区域添加<br>create table  b(<br>   id varchar(32),<br>   constraint primary key(id)<br> );</p>
+</li>
+<li><p>创建表之后，修改表结构，设置主键<br>create table  c(<br>   id varchar(32),<br>  );<br> alter table primarykey_3 add constraint primary key(id);</p>
+</li>
+</ol>
+</li>
+</ul>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">#### mySQL   语法介绍</span><br><span class="line"></span><br><span class="line">  * ```</span><br><span class="line">      *  结构：创建 create ，修改 alter ，删除 drop</span><br><span class="line">     *  数据：录入insert，更新update，删除delete</span><br><span class="line">    </span><br><span class="line">     *  查询数据：select</span><br></pre></td></tr></table></figure>
+
+<p>​    </p>
+<h4 id="DDL-数据定义语言"><a href="#DDL-数据定义语言" class="headerlink" title="DDL: 数据定义语言"></a>DDL: 数据定义语言</h4><ul>
+<li>&#96;&#96;&#96;<ul>
+<li><p>数据库 database</p>
+</li>
+<li><p>创建数据库： mysql &gt; create database  数据库名称 ;</p>
+</li>
+<li><p>mysql &gt; create database  名称  character set  字符集 ;   –  注意： UTF-8 书写为 UTF8</p>
+</li>
+<li><p>删除数据库： mysql &gt; drop database  数据库名称</p>
+</li>
+<li><p>表 table</p>
+</li>
+<li><p>创建表： mysql &gt; create table  表名 ( 字段的描述 );</p>
+</li>
+<li><p>显示当前表的 sql 语句： mysql &gt; show create table  表名 ;</p>
+</li>
+<li><p>修改表名： mysql &gt; alter table  表名  rename  新名称 ;</p>
+</li>
+<li><p>删除表： mysql &gt; drop table  表名 ;</p>
+</li>
+<li><p>字段 column</p>
+</li>
+<li><p>添加字段： mysql &gt; alter table  表名  add column  字段描述</p>
+</li>
+<li><p>修改字段：</p>
+</li>
+<li><p>修改字段名称： mysql&gt; alter table  表名  change  旧字段名 新字段名 + 类型 ;</p>
+</li>
+<li><p>修改字段类型：mysql&gt; alter table 表名 modify column 字段名称 类型;</p>
+</li>
+<li><p>删除字段：mysql &gt; alter table 表名 drop column 字段名称</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">#### DML：数据操纵语言</span><br><span class="line"></span><br><span class="line"> * ```</span><br><span class="line">   * 插入数据： mysql &gt; insert into  表名 [( 字段名称 ,...)] values( 字段值 ,...)</span><br><span class="line">   * 修改数据：mysql &gt; update 表名 set 字段名称 = 字段值 , 字段名称 = 字段值 ... [ where 字段名称=字段值]</span><br><span class="line">     </span><br><span class="line">   * 删除数据：mysql &gt; delete from 表名 [ where 条件]</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h4 id="DQL-数据查询语言"><a href="#DQL-数据查询语言" class="headerlink" title="DQL: 数据查询语言"></a>DQL: 数据查询语言</h4><ul>
+<li><p>&#96;&#96;&#96;</p>
+<ul>
+<li>查询所有<br>sql &gt; select * from users;<br> mysql &gt; select id,firstname,secondname,age,count from users;  </li>
+<li>查询部分信息<br>mysql &gt; select id,age from users;</li>
+<li>查询用户编号、姓名，及格 (60)<br>mysql &gt; select id,firstname,secondname,count from users;<br> mysql &gt; select id,concat(firstname,secondname),count from users;<br> mysql &gt; select id,concat(firstname,secondname),count - 60 from users;</li>
+<li>修改上面查询显示字段名称，用 “ 姓名 “ 表示姓名，用 “ 及格 “ 表示及格</li>
+<li>别名格式：字段  [AS]  别名<br>mysql &gt; select id,concat(firstname,secondname) as  姓名 ,count - 60  及格  from users;</li>
+<li>注意：别名名称中不能包含空格，如果必须使用空格，需要将别名使用引号括住</li>
+</ul>
+<p>mysql &gt; select id,concat(firstname,secondname) as ‘姓 名’,count - 60 ‘及 格’ from users;</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="数据库的备份"><a href="#数据库的备份" class="headerlink" title="数据库的备份"></a>数据库的备份</h4><pre><code>
+ cmd &gt; mysqldump -uroot -p1234 ebookstore &gt; d:/1.sql
+ 格式： mysqldump -u 账号  -p 密码    数据库名称  &gt;  位置
+数据库的还原
+
+ *  注意：必须手动创建数据库
+  cmd &gt; mysql -uroot -p1234 back &lt; d:/1.sql
+
+格式：mysql  -u账号 -p密码    数据库名称 &lt; 位置
+</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/03/08/mysql/" data-id="cl3k3vvtf00069ov471l0bi1i" data-title="mysql" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/04/11/github/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          github
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/03/06/css/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">前端</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/05/24/php/">PHP</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/24/calculate-md/">算法</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/24/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/11/github/">github</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/08/mysql/">mysql</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

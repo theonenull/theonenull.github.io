@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>算法 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="计入立断相信大家都学过一元n次多项式的书写规则，现在给出多项式的系数，请你帮忙写出这个多项式。  多项式中自变量为 x，从左到右按照次数递减顺序给出多项式。多项式中只包含系数不为 0 的项。保证n次项系数不为0。  如果多项式n次项系数为正，则多项式开头不出现“+”号。  如果 x 的指数大于 1，则接下来紧跟的指数部分的形式为“x^b”，其中 b 为 x 的指数；如果 x 的指数为 1，则接下来">
+<meta property="og:type" content="article">
+<meta property="og:title" content="算法">
+<meta property="og:url" content="http://example.com/2022/05/24/calculate-md/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="计入立断相信大家都学过一元n次多项式的书写规则，现在给出多项式的系数，请你帮忙写出这个多项式。  多项式中自变量为 x，从左到右按照次数递减顺序给出多项式。多项式中只包含系数不为 0 的项。保证n次项系数不为0。  如果多项式n次项系数为正，则多项式开头不出现“+”号。  如果 x 的指数大于 1，则接下来紧跟的指数部分的形式为“x^b”，其中 b 为 x 的指数；如果 x 的指数为 1，则接下来">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-05-24T12:00:26.685Z">
+<meta property="article:modified_time" content="2022-05-19T09:20:22.492Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-calculate-md" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/05/24/calculate-md/" class="article-date">
+  <time class="dt-published" datetime="2022-05-24T12:00:26.685Z" itemprop="datePublished">2022-05-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      算法
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="计入立断"><a href="#计入立断" class="headerlink" title="计入立断"></a>计入立断</h2><p>相信大家都学过一元n次多项式的书写规则，现在给出多项式的系数，请你帮忙写出这个多项式。</p>
+<ol>
+<li><p>多项式中自变量为 x，从左到右按照次数递减顺序给出多项式。多项式中只包含系数不为 0 的项。保证n次项系数不为0。</p>
+</li>
+<li><p>如果多项式n次项系数为正，则多项式开头不出现“+”号。</p>
+</li>
+<li><p>如果 x 的指数大于 1，则接下来紧跟的指数部分的形式为“x^b”，其中 b 为 x 的指数；如果 x 的指数为 1，则接下来紧跟的指数部分形式为“x”；如果 x 的指数为 0，则仅需输出系数即可。</p>
+</li>
+<li><p>多项式中，多项式的开头、结尾不含多余的空格。</p>
+</li>
+<li><p>输入样例1:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">5 </span><br><span class="line">10 -1 1 -3 0 10 </span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例1"><a href="#输出样例1" class="headerlink" title="输出样例1:"></a>输出样例1:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">10x^5-x^4+x^3-3x^2+10</span><br></pre></td></tr></table></figure>
+
+<p>###输入样例2</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3 </span><br><span class="line">-5 0 0 1 </span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例2"><a href="#输出样例2" class="headerlink" title="输出样例2:"></a>输出样例2:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-5x^3+1</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">在输入一些已经排好的顺序的数据时，不一定需要我们再次处理，建立数组。</span><br><span class="line">而是可以直接在输入时就进行判断，成立就输入就存入，不成立就continue</span><br><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">	int n, m;</span><br><span class="line">	</span><br><span class="line">	scanf(&quot;%d&quot;, &amp;n);</span><br><span class="line">	for (int i = n; i &gt;= 0; i--) &#123;</span><br><span class="line">		scanf(&quot;%d&quot;, &amp;m);</span><br><span class="line">		if (m) &#123;</span><br><span class="line">			if (i != n &amp;&amp; m &gt; 0)  printf(&quot;+&quot;);</span><br><span class="line">			if (m == -1 &amp;&amp; i)     printf(&quot;-&quot;);</span><br><span class="line">			if (abs(m) &gt; 1 || i == 0)  printf(&quot;%d&quot;, m);</span><br><span class="line">			if (i &gt; 1)   printf(&quot;x^%d&quot;, i);</span><br><span class="line">			if (i == 1)  printf(&quot;x&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/05/24/calculate-md/" data-id="cl3k3vvta00029ov4hseo0dub" data-title="算法" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/05/24/php/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          PHP
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/05/24/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/05/24/php/">PHP</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/24/calculate-md/">算法</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/24/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/11/github/">github</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/08/mysql/">mysql</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

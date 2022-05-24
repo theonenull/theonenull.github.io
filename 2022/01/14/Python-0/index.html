@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Python | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="PythonFlaskApiRestful 标准12345678get -&gt; 查询语句  post -&gt; 添加语句delete -&gt; 删除语句update -&gt; 修改语句import jsonimport timeimport pymysqlfrom flask import Flask, abort, request, Response, jsonify  MYSQL进入">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python">
+<meta property="og:url" content="http://example.com/2022/01/14/Python-0/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="PythonFlaskApiRestful 标准12345678get -&gt; 查询语句  post -&gt; 添加语句delete -&gt; 删除语句update -&gt; 修改语句import jsonimport timeimport pymysqlfrom flask import Flask, abort, request, Response, jsonify  MYSQL进入">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-01-14T14:29:32.000Z">
+<meta property="article:modified_time" content="2022-01-23T20:42:56.516Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Python-0" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/01/14/Python-0/" class="article-date">
+  <time class="dt-published" datetime="2022-01-14T14:29:32.000Z" itemprop="datePublished">2022-01-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Python
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h2 id="Flask"><a href="#Flask" class="headerlink" title="Flask"></a>Flask</h2><h3 id="Api"><a href="#Api" class="headerlink" title="Api"></a>Api</h3><h3 id="Restful-标准"><a href="#Restful-标准" class="headerlink" title="Restful 标准"></a>Restful 标准</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">get -&gt; 查询语句  </span><br><span class="line">post -&gt; 添加语句</span><br><span class="line">delete -&gt; 删除语句</span><br><span class="line">update -&gt; 修改语句</span><br><span class="line">import json</span><br><span class="line">import time</span><br><span class="line">import pymysql</span><br><span class="line">from flask import Flask, abort, request, Response, jsonify</span><br></pre></td></tr></table></figure>
+
+<h2 id="MYSQL"><a href="#MYSQL" class="headerlink" title="MYSQL"></a>MYSQL</h2><h3 id="进入mysql"><a href="#进入mysql" class="headerlink" title="进入mysql"></a>进入mysql</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">import json</span><br><span class="line">import time</span><br><span class="line">import pymysql</span><br><span class="line">from flask import Flask, abort, request, Response, jsonify</span><br><span class="line">py = pymysql.connect(host=&#x27;localhost&#x27;, user=&#x27;root&#x27;, password=&#x27;351172abc2015&#x27;, port=3306, charset=&#x27;utf8&#x27;)</span><br><span class="line">cursorb = py.cursor()</span><br><span class="line">cursorb.execute(&quot;CREATE DATABASE IF NOT EXISTS schedule DEFAULT CHARACTER SET utf8&quot;)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="进入数据库schedule"><a href="#进入数据库schedule" class="headerlink" title="进入数据库schedule"></a>进入数据库schedule</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dy = pymysql.connect(host=&#x27;localhost&#x27;, user=&#x27;root&#x27;, password=&#x27;351172abc2015&#x27;, port=3306,charset=&#x27;utf8&#x27;,database=&#x27;schedule&#x27;)</span><br><span class="line">cursor = dy.cursor()</span><br><span class="line">cursor.execute(</span><br><span class="line">    &#x27;CREATE TABLE IF NOT EXISTS baseschedule (Id VARCHAR(100),Title VARCHAR(100),Text VARCHAR(100),Status VARCHAR(100),Deadline date,Begintime date);&#x27;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="线程与进程"><a href="#线程与进程" class="headerlink" title="线程与进程"></a>线程与进程</h2><h3 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h3><p>概念：计算机分配资源的最小单位</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">getpid() 获取当前进程的pid</span><br><span class="line">getppid() 获取父进程的pid</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">import multiprocessing</span><br><span class="line">import time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def sing():</span><br><span class="line">    for i in range(3):</span><br><span class="line">        print(&quot;唱歌&quot;)</span><br><span class="line">        time.sleep(0.1)</span><br><span class="line"></span><br><span class="line">def dance():</span><br><span class="line">    for i in range(3):</span><br><span class="line">       print(&quot;跳舞&quot;)</span><br><span class="line">       time.sleep(0.1)</span><br><span class="line"></span><br><span class="line">if __name__==&quot;__main__&quot;:   //主进程</span><br><span class="line">    sing_process=multiprocessing.Process(target=sing)   //创建子进程</span><br><span class="line">    dance_process=multiprocessing.Process(target=dance)</span><br><span class="line">    sing_process.start()   </span><br><span class="line">    dance_process.start()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h3><p>程序执行的最小单位，一个进程中有一个或多个线程</p>
+<p>与进程类似</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">import multiprocessing</span><br><span class="line">import time</span><br><span class="line">import threading</span><br><span class="line"></span><br><span class="line">def sing():</span><br><span class="line">    for i in range(3):</span><br><span class="line">        print(&quot;唱歌&quot;)</span><br><span class="line">        time.sleep(0.5)</span><br><span class="line"></span><br><span class="line">def dance():</span><br><span class="line">    for i in range(3):</span><br><span class="line">       print(&quot;跳舞&quot;)</span><br><span class="line">       time.sleep(0.5)</span><br><span class="line"></span><br><span class="line">if __name__==&quot;__main__&quot;:</span><br><span class="line">    sing_process=threading.Thread(target=sing)</span><br><span class="line">    dance_process=threading.Thread(target=dance)</span><br><span class="line"></span><br><span class="line">    sing_process.start()</span><br><span class="line">    dance_process.start()</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><ul>
+<li><p>进程可以利用多核，实现真正意义上的并行，资源开销大</p>
+</li>
+<li><p>线程依附于线程，是又cpu控制的，不能多核</p>
+</li>
+<li><p>传参方式，元组或字典均可，字典key要遵循函数参数名，元组只有一个时，记得逗号</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(&#x27;s&#x27;,)</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>主进程（主线程）保护</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">if __name__==&quot;__main__&quot;:</span><br><span class="line">    sing_process=multiprocessing.Process(target=sing)</span><br><span class="line">    </span><br><span class="line">    dance_process=multiprocessing.Process(target=dance)</span><br><span class="line"></span><br><span class="line">    sing_process.start()</span><br><span class="line">    dance_process.start()</span><br><span class="line">    time.sleep(1)</span><br><span class="line">    print(&quot;主进程已结束&quot;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">唱歌</span><br><span class="line">跳舞</span><br><span class="line">唱歌</span><br><span class="line">跳舞</span><br><span class="line">主进程已结束</span><br><span class="line">唱歌跳舞</span><br><span class="line">进程已结束，退出代码为 0</span><br></pre></td></tr></table></figure>
+
+<p>如果想要实现主进程退出，直接销毁子进程，修改daemon参数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if __name__==&quot;__main__&quot;:</span><br><span class="line">    dance_process=multiprocessing.Process(target=dance)</span><br><span class="line">    dance_process.daemon=True</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="文本操作"><a href="#文本操作" class="headerlink" title="文本操作"></a>文本操作</h2><h3 id="常见操作"><a href="#常见操作" class="headerlink" title="常见操作"></a>常见操作</h3><table>
+<thead>
+<tr>
+<th>1</th>
+<th>open</th>
+<th>打开文件，并且返回文件操作对象</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2</td>
+<td>read</td>
+<td>将文件内容读取到内存</td>
+</tr>
+<tr>
+<td>3</td>
+<td>write</td>
+<td>将指定内容写入文件</td>
+</tr>
+<tr>
+<td>4</td>
+<td>close</td>
+<td>关闭文件</td>
+</tr>
+</tbody></table>
+<h3 id="访问参数说明"><a href="#访问参数说明" class="headerlink" title="访问参数说明"></a>访问参数说明</h3><table>
+<thead>
+<tr>
+<th>访问方式</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>r</td>
+<td align="left">以只读方式打开文件。文件的指针将会放在文件的开头，这是默认模式。如果文件不存在，抛出异常</td>
+</tr>
+<tr>
+<td>w</td>
+<td align="left">以只写方式打开文件。如果文件存在会被覆盖。如果文件不存在，创建新文件</td>
+</tr>
+<tr>
+<td>a</td>
+<td align="left">以追加方式打开文件。如果该文件已存在，文件指针将会放在文件的末尾。如果文件不存在，创建新文件进行写入</td>
+</tr>
+<tr>
+<td>r+</td>
+<td align="left">以读写方式打开文件。文件的指针将会放在文件的开头。如果文件不存在，抛出异常</td>
+</tr>
+<tr>
+<td>w+</td>
+<td align="left">以读写方式打开文件。如果文件存在会被覆盖。如果文件不存在，创建新文件</td>
+</tr>
+<tr>
+<td>a+</td>
+<td align="left">以读写方式打开文件。如果该文件已存在，文件指针将会放在文件的结尾。如果文件不存在，创建新文件进行写入</td>
+</tr>
+</tbody></table>
+<h3 id="按行读取文件内容"><a href="#按行读取文件内容" class="headerlink" title="按行读取文件内容"></a><strong>按行读取文件内容</strong></h3><ul>
+<li>read 方法默认会把文件的 所有内容一次性读取到内存</li>
+<li>如果文件太大，对内存的占用会非常严重</li>
+</ul>
+<p>readline 方法</p>
+<ul>
+<li>readline 方法可以一次读取一行内容</li>
+<li>方法执行后，会把文件指针移动到下一行，准备再次读取</li>
+</ul>
+<p>示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># 打开文件</span><br><span class="line">file = open(&quot;read.txt&quot;)</span><br><span class="line"></span><br><span class="line">while True:</span><br><span class="line">    # 读取一行内容</span><br><span class="line">    text = file.readline()</span><br><span class="line"></span><br><span class="line">    # 判断是否读到内容</span><br><span class="line">    if not text:</span><br><span class="line">        break</span><br><span class="line"></span><br><span class="line">    # 每读取一行的末尾已经有了一个 &#x27;</span><br><span class="line">&#x27;</span><br><span class="line">    print(text, end=&quot;&quot;)</span><br><span class="line"></span><br><span class="line"># 关闭文件</span><br><span class="line">file.close()</span><br></pre></td></tr></table></figure>
+
+<h3 id="补充1：as的用法"><a href="#补充1：as的用法" class="headerlink" title="补充1：as的用法"></a>补充1：as的用法</h3><h4 id="1-with…as…"><a href="#1-with…as…" class="headerlink" title="1.with…as…"></a>1.with…as…</h4><p>第一种是和with结合使用，主要用于文件的读写操作，省去了关闭文件的麻烦。</p>
+<p>写法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">with open(&quot;文件路径&quot;,&quot;读写方式&quot;) as 赋值变量:</span><br><span class="line">    执行代码块</span><br></pre></td></tr></table></figure>
+
+<p>实例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#test.py</span><br><span class="line">with open(&quot;1.txt&quot;) as f:</span><br><span class="line">    print f.read()</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2-导入模块起别名"><a href="#2-导入模块起别名" class="headerlink" title="2.导入模块起别名"></a>2.导入模块起别名</h4><p>第二种是导入模块是对模块进行重命名，也就是给模块起一个别名。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import traceback as a</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-except结合使用"><a href="#3-except结合使用" class="headerlink" title="3.except结合使用"></a>3.except结合使用</h4><p>第三种是和except组合使用，将捕获到的异常对象赋值给e。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">except Exception as e:</span><br><span class="line">    print &quot;e=&quot;,e</span><br><span class="line">    a.print_exc()</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/14/Python-0/" data-id="cl3k3vvt000009ov48kopb4h8" data-title="Python" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/01/26/android/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          android
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/05/24/php/">PHP</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/24/calculate-md/">算法</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/24/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/11/github/">github</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/08/mysql/">mysql</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
