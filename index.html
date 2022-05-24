@@ -430,7 +430,7 @@
           <h1 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h1><h2 id="配置git"><a href="#配置git" class="headerlink" title="配置git"></a>配置git</h2><p>在本地创建ssh key;</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;your_email@youremail.com&quot;</span><br></pre></td></tr></table></figure>
 
-<p>后面的<a href="mailto:&#x79;&#111;&#117;&#114;&#95;&#x65;&#x6d;&#x61;&#x69;&#x6c;&#x40;&#x79;&#x6f;&#x75;&#114;&#101;&#x6d;&#x61;&#105;&#108;&#46;&#99;&#111;&#109;">&#x79;&#111;&#117;&#114;&#95;&#x65;&#x6d;&#x61;&#x69;&#x6c;&#x40;&#x79;&#x6f;&#x75;&#114;&#101;&#x6d;&#x61;&#105;&#108;&#46;&#99;&#111;&#109;</a>改为你在github上注册的邮箱，之后会要求确认路径和输入密码，我们这使用默认的一路回车就行。成功的话会在~&#x2F;下生成.ssh文件夹，进去，打开id_rsa.pub，复制里面的key。</p>
+<p>后面的<a href="mailto:&#x79;&#111;&#117;&#x72;&#x5f;&#x65;&#109;&#x61;&#105;&#108;&#x40;&#121;&#x6f;&#x75;&#x72;&#x65;&#109;&#x61;&#105;&#x6c;&#46;&#99;&#x6f;&#x6d;">&#x79;&#111;&#117;&#x72;&#x5f;&#x65;&#109;&#x61;&#105;&#108;&#x40;&#121;&#x6f;&#x75;&#x72;&#x65;&#109;&#x61;&#105;&#x6c;&#46;&#99;&#x6f;&#x6d;</a>改为你在github上注册的邮箱，之后会要求确认路径和输入密码，我们这使用默认的一路回车就行。成功的话会在~&#x2F;下生成.ssh文件夹，进去，打开id_rsa.pub，复制里面的key。</p>
 <p>回到github上，进入 Account Settings（账户配置），左边选择SSH Keys，Add SSH Key,title随便填，粘贴在你电脑上生成的key。</p>
 <p><img src="https://www.runoob.com/wp-content/uploads/2014/05/github-account.jpg" alt="img"></p>
 <p>为了验证是否成功，在git bash下输入：</p>
@@ -1118,7 +1118,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-05-24 22:10:09" itemprop="dateModified" datetime="2022-05-24T22:10:09+08:00">2022-05-24</time>
+                <time title="修改时间：2022-05-24 22:32:23" itemprop="dateModified" datetime="2022-05-24T22:32:23+08:00">2022-05-24</time>
               </span>
 
           
@@ -1133,40 +1133,40 @@
 
       
           <h1 id="HEXO的博客搭建"><a href="#HEXO的博客搭建" class="headerlink" title="HEXO的博客搭建"></a>HEXO的博客搭建</h1><h2 id="１-node-js"><a href="#１-node-js" class="headerlink" title="１.node.js"></a>１.node.js</h2><p>hexo 依赖于node.js,所以必须提前下载</p>
-<p><img src="/2022/01/24/hexo-blog/myblog\source_posts\hexo-blog\image-20220524213232720.png" alt="node.js下载页面"></p>
+<p><img src="https://github.com/theonenull/theonenull.github.io/blob/master/2022/01/24/hexo-blog/image-20220524213232720.png?raw=true" alt="node.js下载页面"></p>
 <p>一般是下载左边那一个，更稳定</p>
 <h2 id="2-更改下载源"><a href="#2-更改下载源" class="headerlink" title="2.更改下载源"></a>2.更改下载源</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//这一步不是必须，但建议更改</span><br><span class="line">//服务器在国外，改为淘宝</span><br><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br><span class="line">//验证：</span><br><span class="line">cnpm</span><br></pre></td></tr></table></figure>
 
 <p>如下</p>
-<p><img src="/2022/01/24/hexo-blog/myblog\source_posts\hexo-blog\image-20220524213731872.png" alt="执行cnpm的结果"></p>
+<p><img src="https://github.com/theonenull/theonenull.github.io/blob/master/2022/01/24/hexo-blog/image-20220524213731872.png?raw=true" alt="执行cnpm的结果"></p>
 <h2 id="3-下载hexo"><a href="#3-下载hexo" class="headerlink" title="3.下载hexo"></a>3.下载hexo</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//下载hexo</span><br><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2022/01/24/hexo-blog/myblog\source_posts\hexo-blog\image-20220524213939445.png" alt="下载hexo"></p>
+<p><img src="https://github.com/theonenull/theonenull.github.io/blob/master/2022/01/24/hexo-blog/image-20220524213939445.png?raw=true" alt="下载hexo"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//验证</span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2022/01/24/hexo-blog/myblog\source_posts\hexo-blog\image-20220524214106649.png" alt="image-20220524214106649"></p>
+<p><img src="https://github.com/theonenull/theonenull.github.io/blob/master/2022/01/24/hexo-blog/image-20220524214048165.png?raw=true" alt="image-20220524214106649"></p>
 <h2 id="4-初始化"><a href="#4-初始化" class="headerlink" title="4.初始化"></a>4.初始化</h2><p>新建一个文件夹，不同系统不同方法，windows右键就行</p>
 <p>cmd到该文件夹下</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//初始化hexo，它会自动从github上clone</span><br><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2022/01/24/hexo-blog/myblog\source_posts\hexo-blog\image-20220524214258953.png" alt="image-20220524214258953"></p>
+<p><img src="https://github.com/theonenull/theonenull.github.io/blob/master/2022/01/24/hexo-blog/image-20220524214258953.png?raw=true" alt="image-20220524214258953"></p>
 <h2 id="5-开始使用"><a href="#5-开始使用" class="headerlink" title="5.开始使用"></a>5.开始使用</h2><p>相关指令</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//启动hexo,可用网址访问，必须是该电脑！</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2022/01/24/hexo-blog/myblog\source_posts\hexo-blog\image-20220524214559050.png" alt="hexo启动"></p>
+<p><img src="https://github.com/theonenull/theonenull.github.io/blob/master/2022/01/24/hexo-blog/image-20220524214559050.png?raw=true" alt="hexo启动"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//生成静态文件</span><br><span class="line">hexo g </span><br></pre></td></tr></table></figure>
 
-<p><img src="/2022/01/24/hexo-blog/myblog\source_posts\hexo-blog\image-20220524214826419.png" alt="image-20220524214826419"></p>
+<p><img src="https://github.com/theonenull/theonenull.github.io/blob/master/2022/01/24/hexo-blog/image-20220524214826419.png?raw=true" alt="image-20220524214826419"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//清除缓存</span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2022/01/24/hexo-blog/myblog\source_posts\hexo-blog\image-20220524214959629.png" alt="image-20220524214959629"></p>
+<p><img src="https://github.com/theonenull/theonenull.github.io/blob/master/2022/01/24/hexo-blog/image-20220524214959629.png?raw=true" alt="image-20220524214959629"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//同步GitHub，这个待会再说</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
 <h2 id="6-连接GitHub"><a href="#6-连接GitHub" class="headerlink" title="6.连接GitHub"></a>6.连接GitHub</h2><p>为了让别人可以访问我们的博客，我们可以用自己的服务器或官方的，例如内网穿透等，这里介绍GitHub</p>
 <p>首先，建一个GitHub库，牢记牢记，库名必须是你的用户名！！！！！！！！！！！</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//下载插件，用于连接GitHub</span><br><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2022/01/24/hexo-blog/myblog\source_posts\hexo-blog\image-20220524215950639.png" alt="image-20220524215950639"></p>
+<p><img src="https://github.com/theonenull/theonenull.github.io/blob/master/2022/01/24/hexo-blog/image-20220524215950639.png?raw=true" alt="image-20220524215950639"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repo: &#x27;https://github.com/（你的用户名）/（你的用户名）.github.io.git&#x27;</span><br><span class="line">  branch: &#x27;master&#x27;</span><br><span class="line">  //括号表示替换</span><br></pre></td></tr></table></figure>
 
 <p>将初始化hexo的文件夹下的_config.yml文件里的deploy模块更改为上面的样子，</p>
