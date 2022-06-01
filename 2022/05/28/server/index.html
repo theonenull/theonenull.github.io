@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="PHP在安装php遇到的坑1.如果命令提示符对sc或net没有反应，可以尝试在用户变量添 %SystemRoot%\system32 2.记得修改这两行代码 Define SRVROOT &quot;F:\php_environment\Apache24&quot; ServerRoot &quot;$&amp;#123;SRVROOT&amp;#125;&quot; 将其改为自己的路径 3下载时记得下载安全版否">
+  <meta name="description" content="服务器配置相关内容1. uwsgi相关指令1234uwsgi -d --ini uwsgi.inipkill -f uwsgi -9ps aux | grep uwsgi&#x2F;&#x2F;uwsgi相关指令  2.连接远程数据库https:&#x2F;&#x2F;blog.csdn.net&#x2F;MinfCONS&#x2F;article&#x2F;details&#x2F;115917339 3.pycharm连接云服务器https:&#x2F;&#x2F;blog.csdn.net">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PHP">
-<meta property="og:url" content="http://example.com/2022/05/24/php/index.html">
+<meta property="og:title" content="服务器配置">
+<meta property="og:url" content="http://example.com/2022/05/28/server/index.html">
 <meta property="og:site_name" content="SQT">
-<meta property="og:description" content="PHP在安装php遇到的坑1.如果命令提示符对sc或net没有反应，可以尝试在用户变量添 %SystemRoot%\system32 2.记得修改这两行代码 Define SRVROOT &quot;F:\php_environment\Apache24&quot; ServerRoot &quot;$&amp;#123;SRVROOT&amp;#125;&quot; 将其改为自己的路径 3下载时记得下载安全版否">
+<meta property="og:description" content="服务器配置相关内容1. uwsgi相关指令1234uwsgi -d --ini uwsgi.inipkill -f uwsgi -9ps aux | grep uwsgi&#x2F;&#x2F;uwsgi相关指令  2.连接远程数据库https:&#x2F;&#x2F;blog.csdn.net&#x2F;MinfCONS&#x2F;article&#x2F;details&#x2F;115917339 3.pycharm连接云服务器https:&#x2F;&#x2F;blog.csdn.net">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-05-24T12:00:26.708Z">
-<meta property="article:modified_time" content="2022-01-20T19:41:13.282Z">
+<meta property="article:published_time" content="2022-05-28T07:43:00.000Z">
+<meta property="article:modified_time" content="2022-05-28T11:22:40.374Z">
 <meta property="article:author" content="SQT">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2022/05/24/php/">
+<link rel="canonical" href="http://example.com/2022/05/28/server/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>PHP | SQT</title>
+  <title>服务器配置 | SQT</title>
   
 
 
@@ -150,7 +150,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/24/php/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/28/server/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/header.jpg">
@@ -163,7 +163,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          PHP
+          服务器配置
         </h1>
 
         <div class="post-meta">
@@ -172,16 +172,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-05-24 20:00:26" itemprop="dateCreated datePublished" datetime="2022-05-24T20:00:26+08:00">2022-05-24</time>
+              <time title="创建时间：2022-05-28 15:43:00 / 修改时间：19:22:40" itemprop="dateCreated datePublished" datetime="2022-05-28T15:43:00+08:00">2022-05-28</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-01-21 03:41:13" itemprop="dateModified" datetime="2022-01-21T03:41:13+08:00">2022-01-21</time>
-              </span>
 
           
 
@@ -194,19 +188,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h1><h2 id="在安装php遇到的坑"><a href="#在安装php遇到的坑" class="headerlink" title="在安装php遇到的坑"></a>在安装php遇到的坑</h2><p>1.如果命令提示符对sc或net没有反应，可以尝试在用户变量添</p>
-<p><code>%SystemRoot%\system32</code></p>
-<p>2.记得修改这两行代码</p>
-<p><code>Define SRVROOT &quot;F:\php_environment\Apache24&quot; ServerRoot &quot;$&#123;SRVROOT&#125;&quot;</code></p>
-<p>将其改为自己的路径</p>
-<p>3下载时记得下载安全版否则没有dll文件</p>
-<p>4注释不能和代码在一行</p>
-<p>5注意版本问题，php必须与apache版本一致</p>
-<p>6php文件不要用中文</p>
-<p>7由于mysql 8的某些特性，即使配置成功后也无法进行数据库访问，进入数据库，输入以下指令</p>
-<p><code>ALTER USER &#39;你的用户名&#39;@&#39;localhost&#39; IDENTIFIED WITH mysql_native_password BY &#39;你的密码&#39;;</code></p>
-<p>文献来源</p>
-<p><code>https://www.jianshu.com/p/65fcdbdf29fb</code></p>
+        <h1 id="服务器配置相关内容"><a href="#服务器配置相关内容" class="headerlink" title="服务器配置相关内容"></a>服务器配置相关内容</h1><h2 id="1-uwsgi相关指令"><a href="#1-uwsgi相关指令" class="headerlink" title="1. uwsgi相关指令"></a>1. uwsgi相关指令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">uwsgi -d --ini uwsgi.ini</span><br><span class="line">pkill -f uwsgi -9</span><br><span class="line">ps aux | grep uwsgi</span><br><span class="line">//uwsgi相关指令</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-连接远程数据库"><a href="#2-连接远程数据库" class="headerlink" title="2.连接远程数据库"></a>2.连接远程数据库</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/MinfCONS/article/details/115917339">https://blog.csdn.net/MinfCONS/article/details/115917339</a></p>
+<h2 id="3-pycharm连接云服务器"><a href="#3-pycharm连接云服务器" class="headerlink" title="3.pycharm连接云服务器"></a>3.pycharm连接云服务器</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/IRay21/article/details/123603568">https://blog.csdn.net/IRay21/article/details/123603568</a></p>
+<h2 id="4uwsgi的-ini配置"><a href="#4uwsgi的-ini配置" class="headerlink" title="4uwsgi的 ini配置"></a>4uwsgi的 ini配置</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">[uwsgi]</span><br><span class="line">#监听的地址 必须和nginx中的一致，没有nginx就算了</span><br><span class="line">#socket = 127.0.0.1:8000</span><br><span class="line">#wsgi文件，在你的项目配置目录下可以找到 注意：最后输入绝对地址</span><br><span class="line">wsgi-file = /home/aeasringnar/my_Project/jwt-test/my_jwt_test/wsgi.py</span><br><span class="line"># 你的项目的根目录 绝对地址</span><br><span class="line">chdir = /home/aeasringnar/my_Project/jwt-test</span><br><span class="line"># 你项目使用的虚拟环境的根目录 绝对地址</span><br><span class="line">home = /home/aeasringnar/.envs/jwt-test</span><br><span class="line">#你的日志目录，注意的是，你的django控制台输出的日志都会在这里输出，uwsgi的相关日志也在这里</span><br><span class="line">daemonize = /home/aeasringnar/my_Project/jwt-test/test.log</span><br><span class="line">####下面的配置可以有 也可以没有，看个人需求，不建议配置</span><br><span class="line"># 主进程</span><br><span class="line">master = true  </span><br><span class="line"># 多站模式       </span><br><span class="line">vhost = true </span><br><span class="line"># 多站模式时不设置入口模块和文件         </span><br><span class="line">no-site = true  </span><br><span class="line"># 子进程数      </span><br><span class="line">workers = 2           </span><br><span class="line"># 退出、重启时清理文件    </span><br><span class="line">vacuum = true         </span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -222,12 +209,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/05/24/calculate-md/" rel="prev" title="算法">
-      <i class="fa fa-chevron-left"></i> 算法
+    <a href="/2022/05/24/php/" rel="prev" title="PHP">
+      <i class="fa fa-chevron-left"></i> PHP
     </a></div>
       <div class="post-nav-item">
-    <a href="/2022/05/28/server/" rel="next" title="服务器配置">
-      服务器配置 <i class="fa fa-chevron-right"></i>
+    <a href="/2022/05/28/error/" rel="next" title="错误记录">
+      错误记录 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -287,7 +274,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#PHP"><span class="nav-number">1.</span> <span class="nav-text">PHP</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8%E5%AE%89%E8%A3%85php%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91"><span class="nav-number">1.1.</span> <span class="nav-text">在安装php遇到的坑</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">服务器配置相关内容</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-uwsgi%E7%9B%B8%E5%85%B3%E6%8C%87%E4%BB%A4"><span class="nav-number">1.1.</span> <span class="nav-text">1. uwsgi相关指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">1.2.</span> <span class="nav-text">2.连接远程数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-pycharm%E8%BF%9E%E6%8E%A5%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-number">1.3.</span> <span class="nav-text">3.pycharm连接云服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4uwsgi%E7%9A%84-ini%E9%85%8D%E7%BD%AE"><span class="nav-number">1.4.</span> <span class="nav-text">4uwsgi的 ini配置</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
